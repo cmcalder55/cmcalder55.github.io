@@ -1,7 +1,7 @@
 ---
 layout: default
-title: About
+title: Sample Collections
 ---
-# About page
+# Collections page
 
-This page tells you a little bit about me.
+This page will have collections.
