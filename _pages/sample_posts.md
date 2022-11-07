@@ -1,7 +1,7 @@
 ---
 layout: default
-title: About
+title: Sample Posts
 ---
-# About page
+# Posts page
 
-This page tells you a little bit about me.
+This page will have posts.
