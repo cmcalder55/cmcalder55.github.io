@@ -1,6 +1,6 @@
 lsi: false
 safe: true
-source: [cmcalder55.github.io]
+source: /cmcalder55/cmcalder55.github.io
 incremental: false
 highlighter: rouge
 gist:
