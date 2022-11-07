@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -23,7 +23,7 @@ name                     : "Cameron Calder"
 description              : "Programming portfolio."
 url                      : "https://cmcalder55.github.io"
 baseurl                  : #"/minimal-mistakes"
-repository               : # "cmcalder55/cmcalder55"
+repository               : # "cmcalder55/cmcalder55.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -156,6 +156,7 @@ footer:
 include:
   - .htaccess
   - _pages
+  - _posts
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -279,6 +280,13 @@ compress_html:
 
 # Defaults
 defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
   # _posts
   - scope:
       path: ""
