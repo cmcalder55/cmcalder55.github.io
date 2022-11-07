@@ -5,8 +5,8 @@ main:
   - title: "About"
     url: /_pages/about/
   - title: "Sample Posts"
-    url: /year-archive/
+    url: /_pages/sample_posts/
   - title: "Sample Collections"
-    url: /collection-archive/
+    url: /_pages/sample_collection/
   - title: "Sitemap"
-    url: /sitemap/
+    url: /_pages//sitemap/
