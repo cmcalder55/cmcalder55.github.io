@@ -1,7 +1,12 @@
 ---
 layout: default
-title: Sample Collections
+title: Other Projects
 ---
-# Collections page
+# Other programming projects.
 
-This page will have collections.
+Robotics dobot\
+Robotics toolbox\
+autonomous robotics simlab 1\
+autonomous robotics simlab 2\
+blender project\
+urban planning alg
