@@ -2,7 +2,8 @@
 layout: default
 title: Other Projects
 sidebar:
-    nav: "docs"
+ - title: "Title 1"
+ - title: "Title 2"
 ---
 # Robotic Planning
 Robotics dobot\
