@@ -8,4 +8,4 @@ WSSP\
 Wang Robotics Lab\
 Perlman Pulmonary Mechanics Lab\
 LANL\
-Senior Design\
+Senior Design
