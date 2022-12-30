@@ -1,7 +1,11 @@
 ---
 layout: default
-title: Sample Posts
+title: Research
 ---
-# Posts page
+# Research Projects
 
-This page will have posts.
+WSSP
+Wang Robotics Lab
+Perlman Pulmonary Mechanics Lab
+LANL
+Senior Design
