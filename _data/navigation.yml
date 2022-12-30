@@ -3,8 +3,8 @@ main:
   - title: "About"
     url: /_pages/about/
   - title: "Research"
-    url: /_pages/sample_posts/
+    url: /_pages/research_projects/
   - title: "Other Projects"
-    url: /_pages/sample_collection/
+    url: /_pages/other_projects/
   - title: "Sitemap"
     url: /_pages/sitemap/
