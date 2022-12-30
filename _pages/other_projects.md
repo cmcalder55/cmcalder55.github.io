@@ -4,10 +4,10 @@ title: Other Projects
 ---
 # Robotic Planning
 Robotics dobot\
-Robotics toolbox\
+Robotics toolbox
 # Automation
 autonomous robotics simlab 1\
 autonomous robotics simlab 2\
-blender project\
+blender project
 # Evolutionary Algorithms
 urban planning alg
