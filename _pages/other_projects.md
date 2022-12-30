@@ -1,26 +1,15 @@
-'''
-docs:
-  - title: About
-    children:
-      - title: "About"
-        url: /_pages/about/
-      - title: "Sitemap"
-        url: /_pages/sitemap/
-      
-  - title: Research
-    children:
-      - title: "Research"
-        url: /_pages/research_projects/
-
-  - title: Other Projects
-    children:
-      - title: "Other Projects"
-        url: /_pages/other_projects/
-'''
-
 ---
 layout: default
 title: Other Projects
+sidebar:
+    - title: "About"
+      url: /_pages/about/
+    - title: "Sitemap"
+      url: /_pages/sitemap/
+    - title: "Research"
+      url: /_pages/research_projects/
+    - title: "Other Projects"
+      url: /_pages/other_projects/
 ---
 # Robotic Planning
 Robotics dobot\
