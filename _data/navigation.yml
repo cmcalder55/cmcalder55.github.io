@@ -8,9 +8,8 @@ main:
     url: /_pages/other_projects/
   - title: "Sitemap"
     url: /_pages/sitemap/
-  
-  
-  docs:
+
+docs:
   - title: About
     children:
       - title: "About"
