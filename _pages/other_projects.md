@@ -2,14 +2,7 @@
 layout: default
 title: Other Projects
 sidebar:
-    - title: "About"
-      url: /_pages/about/
-    - title: "Sitemap"
-      url: /_pages/sitemap/
-    - title: "Research"
-      url: /_pages/research_projects/
-    - title: "Other Projects"
-      url: /_pages/other_projects/
+    nav: "main"
 ---
 # Robotic Planning
 Robotics dobot\
