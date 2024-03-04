@@ -14,11 +14,33 @@
 
 .nav-item {
   margin: 0 10px;
+  color: #032919;
+}
+
+.nav-subgroup {
+  margin-left: 20px; /* Indent sublinks */
+  list-style-type: none; /* Removes bullet points */
+}
+
+/* Sublist Styles */
+.nav-sublist {
+  list-style-type: none;
+  padding-left: 20px; /* Indent sublinks */
+}
+
+.nav-sublist .nav-item {
+  margin: 5px 0;
+}
+
+/* Additional styling to differentiate sublinks */
+.nav-sublist .nav-link {
+  font-weight: normal;
+  font-size: 0.9em; /* Smaller font size for sublinks */
 }
 
 .nav-link {
   text-decoration: none;
-  color: #fff;
+  color: #032919;
   transition: color 0.3s ease;
 }
 
@@ -34,4 +56,9 @@
   flex-grow: 1;
   padding: 20px;
   overflow-y: auto;
+}
+
+/* Styling for the parent "Optimization" group */
+.nav-item > .nav-link {
+  cursor: pointer; /* Makes it clear it's clickable or expandable */
 }

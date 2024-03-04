@@ -11,7 +11,7 @@ const Flower = () => {
 			<a href="https://github.com/cmcalder55/flower-generator-blender3d" target="_blank" rel="noopener noreferrer" className="github-link">
 				View this project on GitHub
 			</a>
-			<p>This is a great project that demonstrates something interesting.</p>
+			<p>Placeholder</p>
 		</div>
 	);
 };

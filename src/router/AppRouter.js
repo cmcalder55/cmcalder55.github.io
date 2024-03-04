@@ -21,7 +21,7 @@ export default function AppRouter() {
 				{/* Redirect to Home as the default route */}					
 				<Route path="/" element={<HomeLayout />}>				
 					<Route index element={<Home />} />
-
+					{/* Projects page with subroutes */}
 					<Route path="projects" element={<ProjectsLayout />}>
 						<Route index element={<Projects />} />
 						<Route path="blender-flowers" element={<Flower />} />

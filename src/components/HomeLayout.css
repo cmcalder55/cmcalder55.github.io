@@ -22,11 +22,12 @@
 
 .nav-item {
     margin: 0 10px;
+    color: #032919;
 }
 
 .nav-link {
     text-decoration: none;
-    color: #fff;
+    color: #032919;
     transition: color 0.3s ease;
 }
 
