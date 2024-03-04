@@ -1,0 +1,37 @@
+.github-link {
+  display: inline-block;
+  background-color: #333; /* GitHub dark gray */
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.github-link:hover {
+  background-color: #111; /* Darker gray */
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav-link.active {
+  color: #4CAF50; /* Highlight color for the active link */
+}
+
+.nav-link:hover {
+  color: #aaa;
+}
+
+.outlet {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}

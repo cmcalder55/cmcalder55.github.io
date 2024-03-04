@@ -1,0 +1,31 @@
+
+.projects-layout {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 200px; /* Adjust width as needed */
+    background-color: #f0f0f0; /* Sidebar background color */
+  }
+  
+  .sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: black; /* Adjust link color as needed */
+  }
+  
+  .sidebar nav ul li a:hover {
+    background-color: #ddd; /* Adjust hover background color as needed */
+  }
+  
+  main {
+    flex-grow: 1;
+    padding: 20px; /* Adjust padding as needed */
+  }
+  

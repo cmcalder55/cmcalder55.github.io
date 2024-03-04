@@ -1,0 +1,45 @@
+/* layout.css */
+
+.home-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 0 20px;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-link.active {
+    color: #4CAF50; /* Highlight color for the active link */
+}
+
+.nav-link:hover {
+    color: #aaa;
+}
+
+.outlet {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
