@@ -24,23 +24,3 @@
     margin: 0 10px;
     color: #032919;
 }
-
-.nav-link {
-    text-decoration: none;
-    color: #032919;
-    transition: color 0.3s ease;
-}
-
-.nav-link.active {
-    color: #4CAF50; /* Highlight color for the active link */
-}
-
-.nav-link:hover {
-    color: #aaa;
-}
-
-.outlet {
-    flex-grow: 1;
-    padding: 20px;
-    overflow-y: auto;
-}

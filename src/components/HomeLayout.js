@@ -1,5 +1,6 @@
 import { Outlet, NavLink } from "react-router-dom";
-import "./HomeLayout.css"; // Assuming you create a separate CSS file for styling
+import "./HomeLayout.css";
+import "./Layout.css";
 
 const HomeLayout = () => {
     return (

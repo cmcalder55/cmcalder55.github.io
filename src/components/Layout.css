@@ -13,43 +13,47 @@
 }
 
 .nav-item {
-  margin: 0 10px;
-  color: #032919;
+  margin: 0 15px; /* Increased spacing for better tap targets */
+  color: #5A8267; /* Improved contrast */
 }
 
 .nav-subgroup {
-  margin-left: 20px; /* Indent sublinks */
-  list-style-type: none; /* Removes bullet points */
+  margin-left: 20px;
+  list-style-type: none;
 }
 
-/* Sublist Styles */
 .nav-sublist {
   list-style-type: none;
-  padding-left: 20px; /* Indent sublinks */
+  padding-left: 20px;
 }
 
 .nav-sublist .nav-item {
-  margin: 5px 0;
+  margin: 10px 0; /* Increased spacing for clarity */
 }
 
-/* Additional styling to differentiate sublinks */
 .nav-sublist .nav-link {
   font-weight: normal;
-  font-size: 0.9em; /* Smaller font size for sublinks */
+  font-size: 0.9em;
+  color: #045E37; /* Adjusted for better readability */
 }
 
 .nav-link {
   text-decoration: none;
-  color: #032919;
-  transition: color 0.3s ease;
+  color: #045E37; /* Darker shade for better readability */
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .nav-link.active {
-  color: #4CAF50; /* Highlight color for the active link */
+  color: #4CAF50;             /* Highlight color for the active link */
+  /* background-color: #E8F5E9; New background highlight */
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus { /* Focus state for keyboard navigation */
   color: #aaa;
+  background-color: #f4f4f4; /* Subtle background change */
+  outline: none; /* Removes default focus outline */
+  border: 2px solid #aaa; /* Adds a border on hover/focus */
 }
 
 .outlet {
@@ -58,7 +62,6 @@
   overflow-y: auto;
 }
 
-/* Styling for the parent "Optimization" group */
 .nav-item > .nav-link {
-  cursor: pointer; /* Makes it clear it's clickable or expandable */
+  cursor: pointer;
 }
