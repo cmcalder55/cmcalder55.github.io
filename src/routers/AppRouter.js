@@ -18,8 +18,8 @@ import Automation from "../pages/projects/Automation";
 import Robotics from "../pages/projects/Robotics";
 import Miscellaneous from "../pages/projects/Miscellaneous";
 
-import Flower from "../pages/projects/project_pages/flower";
-import LogBarrier from "../pages/projects/project_pages/log_barrier";
+import Flower from "../pages/projects/project_pages/flower_generator";
+import LogBarrier from "../pages/projects/project_pages/log_barrier_opt";
 
 export default function AppRouter() {
   return (

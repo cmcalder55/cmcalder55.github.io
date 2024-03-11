@@ -2,12 +2,12 @@
 
 import ProjectPage from "../ProjectPage";
 
-const MachineLearningAI = () => {
+const PreProcessing = () => {
   const project_data = {
-    name: "Machine Learning / AI",
+    name: "Pre-Processing",
     topics: [
       {
-        title: "Residual Networks",
+        title: "Vectorization",
         pagelink: "res_net",
         description: "Information about topic 1",
         links: [
@@ -18,7 +18,7 @@ const MachineLearningAI = () => {
         ],
       },
       {
-        title: "Music Recommender",
+        title: "Tokenization",
         pagelink: "flower",
         description: "Information about topic 2",
         links: [
@@ -29,29 +29,7 @@ const MachineLearningAI = () => {
         ],
       },
       {
-        title: "Semantic Analysis Methods",
-        pagelink: "flower",
-        description: "Information about topic 2",
-        links: [
-          {
-            text: "View on GitHub",
-            url: "https://github.com/cmcalder55/placeholder",
-          },
-        ],
-      },
-      {
-        title: "Text Clustering & Classification",
-        pagelink: "flower",
-        description: "Information about topic 2",
-        links: [
-          {
-            text: "View on GitHub",
-            url: "https://github.com/cmcalder55/placeholder",
-          },
-        ],
-      },
-      {
-        title: "Stochastic Backpropegation",
+        title: "TFIDF",
         pagelink: "flower",
         description: "Information about topic 2",
         links: [
@@ -68,4 +46,4 @@ const MachineLearningAI = () => {
   return ProjectPage({ project_data });
 };
 
-export default MachineLearningAI;
+export default PreProcessing;

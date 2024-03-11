@@ -7,19 +7,19 @@ const Automation = () => {
     name: "Automation",
     topics: [
       {
-        title: "Topic 1",
+        title: "Blender3D Flower Generator",
         pagelink: "flower",
-        description: "Information about topic 1",
+        description: "Blender3D Python script to generate cherry blossoms.",
         links: [
           {
             text: "View on GitHub",
-            url: "https://github.com/cmcalder55/flower-generator-blender3d",
+            url: "https://github.com/cmcalder55/art/tree/main/flower-generator-blender3d",
           },
         ],
       },
       {
-        title: "Topic 2",
-        pagelink: "flower",
+        title: "Path Finding",
+        pagelink: "path_finding",
         description: "Information about topic 2",
         links: [
           {
