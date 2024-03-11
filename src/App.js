@@ -1,7 +1,7 @@
 // src/App.js
 // Homepage
 
-import AppRouter from './router/AppRouter';
+import AppRouter from './routers/AppRouter';
 // import logo from './logo.svg';
 // import './App.css';
 

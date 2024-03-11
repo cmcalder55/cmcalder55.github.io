@@ -7,6 +7,8 @@ const About = () => {
 		<div>
 			<h1>
                 About Me
+				- Include resume
+				- toolbar with links to: GitHub, video games I play, bookshelf
 			</h1>
 		</div>
 	);

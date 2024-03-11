@@ -1,7 +1,7 @@
 // Filename - pages/projects/flower.js
 
 import React from "react";
-import "../../components/Layout.css"
+import "../../assets/css/Layout.css"
 
 const Flower = () => {
 	return (

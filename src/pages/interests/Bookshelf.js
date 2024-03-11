@@ -6,7 +6,7 @@ const Experience = () => {
 	return (
 		<div>
 			<h1>
-                My Experience
+                What I'm Reading
 			</h1>
 		</div>
 	);
