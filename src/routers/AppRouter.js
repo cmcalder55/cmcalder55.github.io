@@ -17,7 +17,9 @@ import MachineLearningAI from "../pages/projects/MachineLearningAI";
 import Automation from "../pages/projects/Automation";
 import Robotics from "../pages/projects/Robotics";
 import Miscellaneous from "../pages/projects/Miscellaneous";
+
 import Flower from "../pages/projects/project_pages/flower";
+import LogBarrier from "../pages/projects/project_pages/log_barrier";
 
 export default function AppRouter() {
   return (
@@ -34,12 +36,12 @@ export default function AppRouter() {
             <Route index element={<Projects />} />
             {/* optimization pages */}
             <Route path="optimization" element={<Optimization />} />
-            <Route path="optimization/log_barrier" element={<Optimization />} />
-            <Route path="optimization/lin_reg" element={<Optimization />} />
+            <Route path="optimization/log_barrier" element={<LogBarrier />} />
+            {/* <Route path="optimization/lin_reg" element={<Optimization />} />
             <Route path="optimization/gr_descent" element={<Optimization />} />
             <Route path="optimization/matrix_fac" element={<Optimization />} />
             <Route path="optimization/ltsm_net" element={<Optimization />} />
-            <Route path="optimization/comp_vis" element={<Optimization />} />
+            <Route path="optimization/comp_vis" element={<Optimization />} /> */}
 
             {/* control systems pages */}
             <Route path="control_systems" element={<ControlSystems />} />
@@ -60,10 +62,10 @@ export default function AppRouter() {
 
           {/* interests pages */}
           <Route path="interests" element={<Interests />} />
-          <Route path="interests/bookshelf" element={<Optimization />} />
+          {/* <Route path="interests/bookshelf" element={<Optimization />} />
           <Route path="interests/art" element={<Optimization />} />
           <Route path="interests/games" element={<Optimization />} />
-          <Route path="interests/technical" element={<Optimization />} />
+          <Route path="interests/technical" element={<Optimization />} /> */}
 
           {/* Catch any undefined URLs (404 error) */}
           <Route path="*" element={<NoPage />} />

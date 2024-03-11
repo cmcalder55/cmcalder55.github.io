@@ -151,7 +151,7 @@
   
   .topic-container::after {
     content: "";
-    background-image: url("../../../water.jpg"); /* Replace with your image path */
+    background-image: url("water.jpg"); /* Replace with your image path */
     background-size: cover; /* Covers the area of the pseudo-element */
     background-position: center; /* Centers the background image */
     position: absolute;
