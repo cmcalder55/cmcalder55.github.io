@@ -19,7 +19,9 @@ import Robotics from "../pages/projects/Robotics";
 import Miscellaneous from "../pages/projects/Miscellaneous";
 
 import Flower from "../pages/projects/project_pages/flower_generator";
-import LogBarrier from "../pages/projects/project_pages/log_barrier_opt";
+import LogBarrier from "../pages/projects/project_pages/log_barrier";
+import RoboticHand from "../pages/projects/project_pages/ua_robotic_hand";
+import PathFindingSim from "../pages/projects/project_pages/path_finding";
 
 export default function AppRouter() {
   return (
@@ -45,6 +47,7 @@ export default function AppRouter() {
 
             {/* control systems pages */}
             <Route path="control_systems" element={<ControlSystems />} />
+            <Route path="control_systems/ua_robotic_hand" element={<RoboticHand />} />
 
             {/* machine learning / ai pages */}
             <Route path="machine_learning_ai" element={<MachineLearningAI />} />
@@ -53,7 +56,7 @@ export default function AppRouter() {
             <Route path="automation" element={<Automation />} />
             <Route path="automation/flower" element={<Flower />} />
 
-            {/* robotics pages */}
+            {/* pre-processing pages */}
             <Route path="robotics" element={<Robotics />} />
 
             {/* miscellaneous pages */}
