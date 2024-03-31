@@ -24,7 +24,7 @@ const Automation = () => {
         links: [
           {
             text: "View on GitHub",
-            url: "https://example.com/link2",
+            url: "https://github.com/cmcalder55/autonomous-mobile-robotics",
           },
         ],
       },
