@@ -20,7 +20,7 @@ import Miscellaneous from "../pages/projects/Miscellaneous";
 
 import Flower from "../pages/projects/project_pages/flower_generator";
 import LogBarrier from "../pages/projects/project_pages/log_barrier";
-import RoboticHand from "../pages/projects/project_pages/ua_robotic_hand";
+// import RoboticHand from "../pages/projects/project_pages/ua_robotic_hand";
 import PathFindingSim from "../pages/projects/Automation/path_finding";
 
 export default function AppRouter() {
@@ -47,7 +47,7 @@ export default function AppRouter() {
 
             {/* control systems pages */}
             <Route path="control_systems" element={<ControlSystems />} />
-            <Route path="control_systems/ua_robotic_hand" element={<RoboticHand />} />
+            {/* <Route path="control_systems/ua_robotic_hand" element={<RoboticHand />} /> */}
 
             {/* machine learning / ai pages */}
             <Route path="machine_learning_ai" element={<MachineLearningAI />} />
