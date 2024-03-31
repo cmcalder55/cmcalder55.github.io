@@ -18,7 +18,7 @@ import Automation from "../pages/projects/Automation/Automation";
 import Robotics from "../pages/projects/Robotics";
 import Miscellaneous from "../pages/projects/Miscellaneous";
 
-import Flower from "../pages/projects/project_pages/flower_generator";
+import Flower from "../pages/projects/Automation/flower_generator";
 import LogBarrier from "../pages/projects/project_pages/log_barrier";
 // import RoboticHand from "../pages/projects/project_pages/ua_robotic_hand";
 import PathFindingSim from "../pages/projects/Automation/path_finding";
