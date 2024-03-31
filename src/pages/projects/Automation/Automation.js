@@ -1,6 +1,6 @@
 // Filename - pages/projects/Automation.js
 
-import ProjectPage from "../ProjectPage";
+import ProjectPage from "../../ProjectPage";
 
 const Automation = () => {
   const project_data = {

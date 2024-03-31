@@ -2,7 +2,7 @@
 
 import React from "react";
 
-const Experience = () => {
+const Bookshelf = () => {
 	return (
 		<div>
 			<h1>
@@ -12,4 +12,4 @@ const Experience = () => {
 	);
 };
 
-export default Experience;
+export default Bookshelf;

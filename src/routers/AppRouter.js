@@ -14,14 +14,14 @@ import Projects from "../pages/Projects";
 import Optimization from "../pages/projects/Optimization";
 import ControlSystems from "../pages/projects/ControlSystems";
 import MachineLearningAI from "../pages/projects/MachineLearningAI";
-import Automation from "../pages/projects/Automation";
+import Automation from "../pages/projects/Automation/Automation";
 import Robotics from "../pages/projects/Robotics";
 import Miscellaneous from "../pages/projects/Miscellaneous";
 
 import Flower from "../pages/projects/project_pages/flower_generator";
 import LogBarrier from "../pages/projects/project_pages/log_barrier";
 import RoboticHand from "../pages/projects/project_pages/ua_robotic_hand";
-import PathFindingSim from "../pages/projects/project_pages/path_finding";
+import PathFindingSim from "../pages/projects/Automation/path_finding";
 
 export default function AppRouter() {
   return (
@@ -54,7 +54,8 @@ export default function AppRouter() {
 
             {/* automation pages */}
             <Route path="automation" element={<Automation />} />
-            <Route path="automation/flower" element={<Flower />} />
+            <Route path="automation/flower_generator" element={<Flower />} />
+            <Route path="automation/path_planning" element={<PathFindingSim />} />
 
             {/* pre-processing pages */}
             <Route path="robotics" element={<Robotics />} />
