@@ -7,7 +7,7 @@ const Robotics = () => {
     name: "Robotics",
     topics: [
       {
-        title: "Topic 1",
+        title: "Underactuated Robotic Hand",
         pagelink: "flower",
         description: "Information about topic 1",
         links: [
@@ -18,7 +18,7 @@ const Robotics = () => {
         ],
       },
       {
-        title: "Topic 2",
+        title: "Robot Simulations",
         pagelink: "flower",
         description: "Information about topic 2",
         links: [

@@ -36,14 +36,15 @@ export default function AppRouter() {
           {/* Projects page with subroutes */}
           <Route path="projects" element={<ProjectsLayout />}>
             <Route index element={<Projects />} />
+            
             {/* optimization pages */}
             <Route path="optimization" element={<Optimization />} />
             <Route path="optimization/log_barrier" element={<LogBarrier />} />
-            {/* <Route path="optimization/lin_reg" element={<Optimization />} />
-            <Route path="optimization/gr_descent" element={<Optimization />} />
-            <Route path="optimization/matrix_fac" element={<Optimization />} />
+            <Route path="optimization/lin_reg" element={<Optimization />} />
+            <Route path="optimization/gradient_descent" element={<Optimization />} />
+            <Route path="optimization/matrix_factorization" element={<Optimization />} />
             <Route path="optimization/ltsm_net" element={<Optimization />} />
-            <Route path="optimization/comp_vis" element={<Optimization />} /> */}
+            {/* <Route path="optimization/comp_vis" element={<Optimization />} /> */}
 
             {/* control systems pages */}
             <Route path="control_systems" element={<ControlSystems />} />

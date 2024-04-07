@@ -8,7 +8,7 @@ const Optimization = () => {
     topics: [
       {
         title: "Urban Planning with Genetic Algorithms",
-        pagelink: "gen_alg",
+        pagelink: "/optimization/gen_alg",
         description: "gen_alg",
         links: [
           {
@@ -19,7 +19,7 @@ const Optimization = () => {
       },
       {
         title: "Linear Regression Models",
-        pagelink: "lin_reg",
+        pagelink: "/optimization/lin_reg",
         description: "Information about topic 2",
         links: [
           {
@@ -30,18 +30,18 @@ const Optimization = () => {
       },
       {
         title: "Log-Barrier Optimization",
-        pagelink: "log_barrier",
-        description: "Information about topic 2",
+        pagelink: "/optimization/log_barrier",
+        description: "Information about topic",
         links: [
           {
             text: "View on GitHub",
-            url: "https://github.com/cmcalder55/placeholder",
+            url: "https://github.com/cmcalder55/log-barrier-optimization",
           },
         ],
       },
       {
         title: "Gradient Descent Methods",
-        pagelink: "gr_descent",
+        pagelink: "/optimization/gradient_descent",
         description: "Information about topic 2",
         links: [
           {
@@ -52,7 +52,7 @@ const Optimization = () => {
       },
       {
         title: "Matrix Factorization",
-        pagelink: "matrix_fac",
+        pagelink: "/optimization/matrix_factorization",
         description: "Information about topic 2",
         links: [
           {
@@ -63,7 +63,7 @@ const Optimization = () => {
       },
       {
         title: "LTSM Network",
-        pagelink: "ltsm_net",
+        pagelink: "/optimization/ltsm_net",
         description: "Information about topic 2",
         links: [
           {

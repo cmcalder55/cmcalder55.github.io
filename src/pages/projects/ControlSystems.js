@@ -7,7 +7,7 @@ const ControlSystems = () => {
     name: "Control Systems",
     topics: [
       {
-        title: "Topic 1",
+        title: "Underactuated Robotic Hand",
         pagelink: "flower",
         description: "Information about topic 1",
         links: [
@@ -18,7 +18,18 @@ const ControlSystems = () => {
         ],
       },
       {
-        title: "Topic 2",
+        title: "Robot Simulations",
+        pagelink: "flower",
+        description: "Information about topic 2",
+        links: [
+          {
+            text: "View on GitHub",
+            url: "https://example.com/link2",
+          },
+        ],
+      },
+      {
+        title: "Custom PI Controller",
         pagelink: "flower",
         description: "Information about topic 2",
         links: [

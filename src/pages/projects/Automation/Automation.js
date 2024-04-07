@@ -8,7 +8,7 @@ const Automation = () => {
     topics: [
       {
         title: "Blender3D Flower Generator",
-        pagelink: "flower",
+        pagelink: "/automation/flower_generator",
         description: "Blender3D Python script to generate cherry blossoms.",
         links: [
           {
@@ -19,7 +19,7 @@ const Automation = () => {
       },
       {
         title: "Path Finding",
-        pagelink: "path_finding",
+        pagelink: "/automation/path_finding",
         description: "Information about topic 2",
         links: [
           {
