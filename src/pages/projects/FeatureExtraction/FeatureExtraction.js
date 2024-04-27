@@ -1,15 +1,15 @@
-// Filename - pages/projects/Optimization.js
+// Filename - pages/projects/FeatureExtraction/FeatureExtraction.js
 
 import ProjectPage from "../ProjectPage";
 
-const Optimization = () => {
+const FeatureExtraction = () => {
   const project_data = {
-    name: "Optimization",
+    name: "Feature Extraction",
     topics: [
       {
-        title: "Urban Planning with Genetic Algorithms",
-        pagelink: "/optimization/gen_alg",
-        description: "gen_alg",
+        title: "Residual Networks",
+        pagelink: "res_net",
+        description: "Information about topic 1",
         links: [
           {
             text: "View on GitHub",
@@ -18,8 +18,8 @@ const Optimization = () => {
         ],
       },
       {
-        title: "Linear Regression Models",
-        pagelink: "/optimization/lin_reg",
+        title: "Music Recommender",
+        pagelink: "flower",
         description: "Information about topic 2",
         links: [
           {
@@ -29,19 +29,8 @@ const Optimization = () => {
         ],
       },
       {
-        title: "Log-Barrier Optimization",
-        pagelink: "/optimization/log_barrier",
-        description: "Information about topic",
-        links: [
-          {
-            text: "View on GitHub",
-            url: "https://github.com/cmcalder55/log-barrier-optimization",
-          },
-        ],
-      },
-      {
-        title: "Gradient Descent Methods",
-        pagelink: "/optimization/gradient_descent",
+        title: "Semantic Analysis Methods",
+        pagelink: "flower",
         description: "Information about topic 2",
         links: [
           {
@@ -51,8 +40,8 @@ const Optimization = () => {
         ],
       },
       {
-        title: "Matrix Factorization",
-        pagelink: "/optimization/matrix_factorization",
+        title: "Text Clustering & Classification",
+        pagelink: "flower",
         description: "Information about topic 2",
         links: [
           {
@@ -62,8 +51,8 @@ const Optimization = () => {
         ],
       },
       {
-        title: "LTSM Network",
-        pagelink: "/optimization/ltsm_net",
+        title: "Stochastic Backpropegation",
+        pagelink: "flower",
         description: "Information about topic 2",
         links: [
           {
@@ -79,4 +68,4 @@ const Optimization = () => {
   return ProjectPage({ project_data });
 };
 
-export default Optimization;
+export default FeatureExtraction;

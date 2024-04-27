@@ -1,15 +1,15 @@
-// Filename - pages/projects/MachineLearningAI.js
+// Filename - pages/projects/Optimization/Optimization.js
 
 import ProjectPage from "../ProjectPage";
 
-const MachineLearningAI = () => {
+const Optimization = () => {
   const project_data = {
-    name: "Machine Learning / AI",
+    name: "Optimization",
     topics: [
       {
-        title: "Residual Networks",
-        pagelink: "res_net",
-        description: "Information about topic 1",
+        title: "Urban Planning with Genetic Algorithms",
+        pagelink: "/optimization/gen_alg",
+        description: "gen_alg",
         links: [
           {
             text: "View on GitHub",
@@ -18,8 +18,8 @@ const MachineLearningAI = () => {
         ],
       },
       {
-        title: "Music Recommender",
-        pagelink: "flower",
+        title: "Linear Regression Models",
+        pagelink: "/optimization/lin_reg",
         description: "Information about topic 2",
         links: [
           {
@@ -29,8 +29,19 @@ const MachineLearningAI = () => {
         ],
       },
       {
-        title: "Semantic Analysis Methods",
-        pagelink: "flower",
+        title: "Log-Barrier Optimization",
+        pagelink: "/optimization/log_barrier",
+        description: "Information about topic",
+        links: [
+          {
+            text: "View on GitHub",
+            url: "https://github.com/cmcalder55/log-barrier-optimization",
+          },
+        ],
+      },
+      {
+        title: "Gradient Descent Methods",
+        pagelink: "/optimization/gradient_descent",
         description: "Information about topic 2",
         links: [
           {
@@ -40,8 +51,8 @@ const MachineLearningAI = () => {
         ],
       },
       {
-        title: "Text Clustering & Classification",
-        pagelink: "flower",
+        title: "Matrix Factorization",
+        pagelink: "/optimization/matrix_factorization",
         description: "Information about topic 2",
         links: [
           {
@@ -51,8 +62,8 @@ const MachineLearningAI = () => {
         ],
       },
       {
-        title: "Stochastic Backpropegation",
-        pagelink: "flower",
+        title: "LTSM Network",
+        pagelink: "/optimization/ltsm_net",
         description: "Information about topic 2",
         links: [
           {
@@ -68,4 +79,4 @@ const MachineLearningAI = () => {
   return ProjectPage({ project_data });
 };
 
-export default MachineLearningAI;
+export default Optimization;

@@ -1,4 +1,4 @@
-// Filename - pages/projects/MachineLearningAI.js
+// Filename - pages/projects/PreProcessing.js
 
 import ProjectPage from "../ProjectPage";
 
