@@ -8,7 +8,7 @@ const Projects = () => {
   // page square links
   const squaresData = [
     { url: "/projects/ann", text: "Artifical Neural Networks" },
-    { url: "/projects/automation-and-controls", text: "Automation and Control Systems" },
+    { url: "/projects/automation-and-controls", text: "Automation / Control Systems" },
     { url: "/projects/classification", text: "Classification" },
     { url: "/projects/db-app-dev", text: "DB / App Development" },  
     { url: "/projects/feature-extraction", text: "Feature Extraction" },

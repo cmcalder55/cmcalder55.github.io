@@ -1,6 +1,6 @@
 // Filename - pages/projects/PreProcessing.js
 
-import ProjectPage from "../ProjectPage";
+import ProjectPage from "../../ProjectPage";
 
 const PreProcessing = () => {
   const project_data = {

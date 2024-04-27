@@ -1,6 +1,6 @@
 // Filename - pages/projects/FeatureExtraction/FeatureExtraction.js
 
-import ProjectPage from "../ProjectPage";
+import ProjectPage from "../../ProjectPage";
 
 const FeatureExtraction = () => {
   const project_data = {

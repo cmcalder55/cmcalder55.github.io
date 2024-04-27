@@ -24,42 +24,39 @@ const HomeLayout = () => {
             {
               <ul className="dropdown-menu">
                 <li>
-                  <NavLink
-                    to="/projects/control_systems"
-                    className="dropdown-link"
-                  >
-                    Control Systems
+                  <NavLink to="/projects/ann" className="dropdown-link">
+                    Artifical Neural Networks
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink
-                    to="/projects/machine_learning_ai"
-                    className="dropdown-link"
-                  >
-                    Machine Learning / AI
+                  <NavLink to="/projects/automation-and-controls" className="dropdown-link">
+                    Automation / Control Systems
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/projects/automation" className="dropdown-link">
-                    Automation
+                  <NavLink to="/projects/classification" className="dropdown-link">
+                    Classification
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink
-                    to="/projects/optimization"
-                    className="dropdown-link"
-                  >
+                  <NavLink to="/projects/db-app-dev" className="dropdown-link">
+                    DB / App Development
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/projects/feature-extraction" className="dropdown-link">
+                    Feature Extraction
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/projects/optimization" className="dropdown-link">
                     Optimization
                   </NavLink>
                 </li>
+
                 <li>
-                  <NavLink to="/projects/robotics" className="dropdown-link">
-                    Robotics
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/projects/misc" className="dropdown-link">
-                    Miscellaneous
+                  <NavLink to="/projects/pre-processing" className="dropdown-link">
+                    Data Pre-Processing
                   </NavLink>
                 </li>
                 {/* Add more projects here */}
