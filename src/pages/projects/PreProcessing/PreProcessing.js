@@ -7,39 +7,27 @@ const PreProcessing = () => {
     name: "Pre-Processing",
     topics: [
       {
-        title: "Vectorization",
-        pagelink: "res_net",
+        title: "Web Scraping",
+        pagelink: "/pre-processing/web-scraping",
         description: "Information about topic 1",
         links: [
           {
             text: "View on GitHub",
-            url: "https://github.com/cmcalder55/placeholder",
+            url: "https://github.com/cmcalder55/pre-processing/tree/main/web-scraping",
           },
         ],
       },
       {
-        title: "Tokenization",
-        pagelink: "flower",
+        title: "Vector Representation",
+        pagelink: "/pre-processing/vectorization",
         description: "Information about topic 2",
         links: [
           {
             text: "View on GitHub",
-            url: "https://github.com/cmcalder55/placeholder",
+            url: "https://github.com/cmcalder55/pre-processing/tree/main/vector-representation",
           },
         ],
       },
-      {
-        title: "TFIDF",
-        pagelink: "flower",
-        description: "Information about topic 2",
-        links: [
-          {
-            text: "View on GitHub",
-            url: "https://github.com/cmcalder55/placeholder",
-          },
-        ],
-      },
-      // Add more topics as needed
     ],
   };
 

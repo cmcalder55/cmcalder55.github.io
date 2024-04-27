@@ -7,8 +7,8 @@ const FeatureExtraction = () => {
     name: "Feature Extraction",
     topics: [
       {
-        title: "Residual Networks",
-        pagelink: "res_net",
+        title: "Autoencoder",
+        pagelink: "/feature-extraction/autoencoder",
         description: "Information about topic 1",
         links: [
           {
@@ -18,8 +18,8 @@ const FeatureExtraction = () => {
         ],
       },
       {
-        title: "Music Recommender",
-        pagelink: "flower",
+        title: "Hidden Layer Network",
+        pagelink: "/feature-extraction/hidden-layer",
         description: "Information about topic 2",
         links: [
           {
@@ -29,8 +29,8 @@ const FeatureExtraction = () => {
         ],
       },
       {
-        title: "Semantic Analysis Methods",
-        pagelink: "flower",
+        title: "Semantic Network Analysis",
+        pagelink: "/feature-extraction/semantic-net",
         description: "Information about topic 2",
         links: [
           {
@@ -40,8 +40,8 @@ const FeatureExtraction = () => {
         ],
       },
       {
-        title: "Text Clustering & Classification",
-        pagelink: "flower",
+        title: "Vector Embedding",
+        pagelink: "/feature-extraction/embedding",
         description: "Information about topic 2",
         links: [
           {
@@ -50,18 +50,6 @@ const FeatureExtraction = () => {
           },
         ],
       },
-      {
-        title: "Stochastic Backpropegation",
-        pagelink: "flower",
-        description: "Information about topic 2",
-        links: [
-          {
-            text: "View on GitHub",
-            url: "https://github.com/cmcalder55/placeholder",
-          },
-        ],
-      },
-      // Add more topics as needed
     ],
   };
 

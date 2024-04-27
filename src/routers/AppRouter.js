@@ -12,7 +12,8 @@ import NoPage from "../pages/NoPage";
 import About from "../pages/About";
 import Projects from "../pages/Projects";
 import ANN from "../pages/projects/ArtificialNeuralNet/ANN"
-import Automation from "../pages/projects/AutomationAndControls/Automation";
+import { Automation, 
+  PathFindingSim, UaRobotics, PiController } from "../pages/projects/AutomationAndControls/Automation";
 import Classification from "../pages/projects/Classification/Classification"
 import DbAppDev from "../pages/projects/DbAppDevelopment/DbAppDevelopment"
 import  FeatureExtraction from "../pages/projects/FeatureExtraction/FeatureExtraction"
@@ -39,8 +40,9 @@ export default function AppRouter() {
             
             {/* Automation and Control Systems pages */}
             <Route path="automation-and-controls" element={<Automation />} />
-            {/* <Route path="automation-and-controls/flower_generator" element={<Flower />} />
-            <Route path="automation-and-controls/path_planning" element={<PathFindingSim />} /> */}
+            <Route path="automation-and-controls/ua-robotics" element={<UaRobotics />} />
+            <Route path="automation-and-controls/pi-controller" element={<PiController />} />
+            <Route path="automation-and-controls/path-planning" element={<PathFindingSim />} />
 
             {/* pre-processing pages */}
             <Route path="classification" element={<Classification />} />

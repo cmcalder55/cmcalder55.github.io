@@ -8,71 +8,81 @@ const Optimization = () => {
     topics: [
       {
         title: "Urban Planning with Genetic Algorithms",
-        pagelink: "/optimization/gen_alg",
+        pagelink: "/optimization/gen-alg",
         description: "gen_alg",
         links: [
           {
             text: "View on GitHub",
-            url: "https://github.com/cmcalder55/placeholder",
+            url: "https://github.com/cmcalder55/optimization/tree/main/genetic_algorithm",
           },
         ],
       },
       {
         title: "Linear Regression Models",
-        pagelink: "/optimization/lin_reg",
+        pagelink: "/optimization/lin-reg",
         description: "Information about topic 2",
         links: [
           {
             text: "View on GitHub",
-            url: "https://github.com/cmcalder55/placeholder",
+            url: "https://github.com/cmcalder55/optimization/tree/main/linear_regression",
           },
         ],
       },
       {
         title: "Log-Barrier Optimization",
-        pagelink: "/optimization/log_barrier",
+        pagelink: "/optimization/log-barrier",
         description: "Information about topic",
         links: [
           {
             text: "View on GitHub",
-            url: "https://github.com/cmcalder55/log-barrier-optimization",
+            url: "https://github.com/cmcalder55/optimization/tree/main/log_barrier",
           },
         ],
       },
       {
         title: "Gradient Descent Methods",
-        pagelink: "/optimization/gradient_descent",
+        pagelink: "/optimization/gradient-descent",
         description: "Information about topic 2",
         links: [
           {
             text: "View on GitHub",
-            url: "https://github.com/cmcalder55/placeholder",
+            url: "https://github.com/cmcalder55/optimization/tree/main/gradient_descent",
           },
         ],
       },
       {
         title: "Matrix Factorization",
-        pagelink: "/optimization/matrix_factorization",
+        pagelink: "/optimization/matrix-fac",
         description: "Information about topic 2",
         links: [
           {
             text: "View on GitHub",
-            url: "https://github.com/cmcalder55/placeholder",
+            url: "https://github.com/cmcalder55/optimization/tree/main/matrix_factorization",
           },
         ],
       },
       {
-        title: "LTSM Network",
-        pagelink: "/optimization/ltsm_net",
+        title: "Bayes Estimation",
+        pagelink: "/optimization/bayes-est",
         description: "Information about topic 2",
         links: [
           {
             text: "View on GitHub",
-            url: "https://github.com/cmcalder55/placeholder",
+            url: "https://github.com/cmcalder55/optimization/tree/main/bayes_estimation",
           },
         ],
       },
-      // Add more topics as needed
+      {
+        title: "Stochastic Backpropegation",
+        pagelink: "/optimization/stoc-backprop",
+        description: "Information about topic 2",
+        links: [
+          {
+            text: "View on GitHub",
+            url: "https://github.com/cmcalder55/optimization/tree/main/stochastic_backpropegation",
+          },
+        ],
+      },
     ],
   };
 

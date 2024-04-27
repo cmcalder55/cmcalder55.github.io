@@ -13,7 +13,7 @@ const ANN = () => {
           links: [
             {
               text: "View on GitHub",
-              url: "https://github.com/cmcalder55/art/tree/main/flower-generator-blender3d",
+              url: "https://github.com/cmcalder55/ann/tree/main/cnn",
             },
           ],
         },
@@ -24,7 +24,7 @@ const ANN = () => {
           links: [
             {
               text: "View on GitHub",
-              url: "https://github.com/cmcalder55/autonomous-mobile-robotics",
+              url: "https://github.com/cmcalder55/ann/tree/main/ltsm",
             },
           ],
         },
@@ -35,7 +35,7 @@ const ANN = () => {
             links: [
               {
                 text: "View on GitHub",
-                url: "https://github.com/cmcalder55/autonomous-mobile-robotics",
+                url: "https://github.com/cmcalder55/ann/tree/main/rnn",
               },
             ],
           },

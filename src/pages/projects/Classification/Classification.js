@@ -7,39 +7,71 @@ const Classification = () => {
       name: "Classification",
       topics: [
         {
-          title: "Autonomous Mobile Robotics Path Planning",
-          pagelink: "/automation-and-controls/path-planning",
-          description: "SLAM mapping, Path Planning with localization uncertainty",
+          title: "Music Recommendation Model",
+          pagelink: "/classification/music-recommender",
+          description: "Music Recommender",
           links: [
             {
               text: "View on GitHub",
-              url: "https://github.com/cmcalder55/automation-and-controls/tree/main/autonomous-mobile-robotics",
+              url: "https://github.com/cmcalder55/classification/tree/main/music-recommender",
             },
           ],
         },
         {
-          title: "Custom PI Controller",
-          pagelink: "/automation-and-controls/pi-controller",
-          description: "Automation and Machine Learning for Robust Self-Tuning of Magneto-Optical Traps",
+          title: "Gaussian Mixture Model",
+          pagelink: "/classification/gmm",
+          description: "todo",
           links: [
             {
               text: "View on GitHub",
-              url: "https://github.com/cmcalder55/automation-and-controls/tree/main/mirror-mount-pi-controller",
+              url: "https://github.com/cmcalder55/classification/blob/main/gmm_density.ipynb",
             },
           ],
         },
         {
-          title: "Underactuated Robotic Gripper",
-          pagelink: "/automation-and-controls/ua-robotics",
-          description: "creation of a low-cost robotic hand that can be attached to a commercial robotic arm for various complex manipulation tasks",
+          title: "Text Clustering",
+          pagelink: "/classification/text-clustering",
+          description: "todo",
           links: [
             {
               text: "View on GitHub",
-              url: "https://github.com/cmcalder55/automation-and-controls/tree/main/underactuated-robotics",
+              url: "https://github.com/cmcalder55/classification/blob/main/text_clustering.ipynb",
             },
           ],
         },
-        // Add more topics as needed
+        {
+          title: "Naive-Bayes",
+          pagelink: "/classification/naive-bayes",
+          description: "todo",
+          links: [
+            {
+              text: "View on GitHub",
+              url: "https://github.com/cmcalder55/classification/blob/main/naive-bayes.ipynb",
+            },
+          ],
+        },
+        {
+          title: "Linear SVM",
+          pagelink: "/classification/linear-svm",
+          description: "todo",
+          links: [
+            {
+              text: "View on GitHub",
+              url: "https://github.com/cmcalder55/classification/blob/main/linear_svm.ipynb",
+            },
+          ],
+        },
+        {
+          title: "Decision Tree",
+          pagelink: "/classification/decision-tree",
+          description: "todo",
+          links: [
+            {
+              text: "View on GitHub",
+              url: "https://github.com/cmcalder55/classification/blob/main/decision_tree_classifier.ipynb",
+            },
+          ],
+        },
       ],
     };
   

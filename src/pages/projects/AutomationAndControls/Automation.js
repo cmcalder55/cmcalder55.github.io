@@ -39,12 +39,67 @@ const Automation = () => {
           },
         ],
       },
-      // Add more topics as needed
     ],
   };
 
   return ProjectPage({ project_data });
 };
 
-export default Automation;
+const PathFindingSim = () => {
+  return (
+    <div>
+      <h1>Simulation and Path Planning of an Autonomous Mobile Robot</h1>
+      {/* Link to GitHub repository */}
+      <a
+        href="https://github.com/cmcalder55/autonomous-mobile-robotics"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="github-link"
+      >
+        View this project on GitHub
+      </a>
+      <p>Placeholder</p>
+    </div>
+  );
+};
+
+const PiController = () => {
+  return (
+    <div>
+      <h1>Custom PI Controller</h1>
+      {/* Link to GitHub repository */}
+      <a
+        href="https://github.com/cmcalder55/automation-and-controls/tree/main/mirror-mount-pi-controller"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="github-link"
+      >
+        View this project on GitHub
+      </a>
+      <p>Placeholder</p>
+    </div>
+  );
+};
+
+const UaRobotics = () => {
+  return (
+    <div>
+      <h1>Underactuated Robotic Gripper</h1>
+      {/* Link to GitHub repository */}
+      <a
+        href="https://github.com/cmcalder55/automation-and-controls/tree/main/underactuated-robotics"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="github-link"
+      >
+        View this project on GitHub
+      </a>
+      <p>Placeholder</p>
+    </div>
+  );
+};
+
+
+
+export default Automation; PathFindingSim; UaRobotics; PiController;
 
