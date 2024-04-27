@@ -5,16 +5,18 @@ import "../styles/style.css";
 const Projects = () => {
   let navigate = useNavigate();
 
+  // page square links
   const squaresData = [
-    { url: "/projects/control_systems", text: "Control Systems" },
-    { url: "/projects/machine_learning_ai", text: "Machine Learning / AI" },
-    { url: "/projects/automation", text: "Automation" },
+    { url: "/projects/ann", text: "Artifical Neural Networks" },
+    { url: "/projects/automation-and-controls", text: "Automation and Control Systems" },
+    { url: "/projects/classification", text: "Classification" },
+    { url: "/projects/db-app-dev", text: "DB / App Development" },  
+    { url: "/projects/feature-extraction", text: "Feature Extraction" },
     { url: "/projects/optimization", text: "Optimization" },
-    { url: "/projects/robotics", text: "Robotics" },
-    { url: "/projects/misc", text: "Miscellaneous" },
-    // Add more objects for more squares/projects
+    { url: "/projects/pre-processing", text: "Data Pre-Processing" },
   ];
 
+  // go to the page url on clicking the square
   const handleClick = (url) => {
     navigate(url);
   };

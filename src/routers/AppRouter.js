@@ -11,17 +11,13 @@ import Home from "../pages/Home";
 import NoPage from "../pages/NoPage";
 import About from "../pages/About";
 import Projects from "../pages/Projects";
-import Optimization from "../pages/projects/Optimization";
-import ControlSystems from "../pages/projects/ControlSystems";
-import MachineLearningAI from "../pages/projects/MachineLearningAI";
-import Automation from "../pages/projects/Automation/Automation";
-import Robotics from "../pages/projects/Robotics";
-import Miscellaneous from "../pages/projects/Miscellaneous";
-
-import Flower from "../pages/projects/Automation/flower_generator";
-import LogBarrier from "../pages/projects/project_pages/log_barrier";
-// import RoboticHand from "../pages/projects/project_pages/ua_robotic_hand";
-import PathFindingSim from "../pages/projects/Automation/path_finding";
+import ANN from "../pages/projects/ArtificialNeuralNet/ANN"
+import Automation from "../pages/projects/AutomationAndControls/Automation";
+import Classification from "../pages/projects/Classification/Classification"
+import DbAppDev from "../pages/projects/DbAppDevelopment/DbAppDevelopment"
+import  FeatureExtraction from "../pages/Projects/FeatureExtraction/FeatureExtraction"
+import Optimization from "../pages/projects/Optimization/Optimization"
+import PreProcessing from "../pages/projects/PreProcessing/PreProcessing"
 
 export default function AppRouter() {
   return (
@@ -36,8 +32,26 @@ export default function AppRouter() {
           {/* Projects page with subroutes */}
           <Route path="projects" element={<ProjectsLayout />}>
             <Route index element={<Projects />} />
+
+            {/* Artificial Neural Network pages */}
+            <Route path="ann" element={<ANN />} />
+            {/* <Route path="control_systems/ua_robotic_hand" element={<RoboticHand />} /> */}
             
-            {/* optimization pages */}
+            {/* Automation and Control Systems pages */}
+            <Route path="automation" element={<Automation />} />
+            <Route path="automation-and-controls/flower_generator" element={<Flower />} />
+            <Route path="automation-and-controls/path_planning" element={<PathFindingSim />} />
+
+            {/* pre-processing pages */}
+            <Route path="classification" element={<Classification />} />
+            
+            {/* Database / App Development pages */}
+            <Route path="db-app-dev" element={<DbAppDev />} />
+
+            {/* miscellaneous pages */}
+            <Route path="feature-extraction" element={<FeatureExtraction />} />
+          
+            {/* Optimization pages */}
             <Route path="optimization" element={<Optimization />} />
             <Route path="optimization/log_barrier" element={<LogBarrier />} />
             <Route path="optimization/lin_reg" element={<Optimization />} />
@@ -46,23 +60,9 @@ export default function AppRouter() {
             <Route path="optimization/ltsm_net" element={<Optimization />} />
             {/* <Route path="optimization/comp_vis" element={<Optimization />} /> */}
 
-            {/* control systems pages */}
-            <Route path="control_systems" element={<ControlSystems />} />
-            {/* <Route path="control_systems/ua_robotic_hand" element={<RoboticHand />} /> */}
-
-            {/* machine learning / ai pages */}
-            <Route path="machine_learning_ai" element={<MachineLearningAI />} />
-
-            {/* automation pages */}
-            <Route path="automation" element={<Automation />} />
-            <Route path="automation/flower_generator" element={<Flower />} />
-            <Route path="automation/path_planning" element={<PathFindingSim />} />
-
-            {/* pre-processing pages */}
-            <Route path="robotics" element={<Robotics />} />
-
             {/* miscellaneous pages */}
-            <Route path="misc" element={<Miscellaneous />} />
+            <Route path="pre-processing" element={<PreProcessing />} />
+          
           </Route>
 
           {/* interests pages */}
