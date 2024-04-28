@@ -2,13 +2,13 @@
 
 import ProjectPage from "../../ProjectPage";
 
-const PreProcessing = () => {
+export const Index = () => {
   const project_data = {
     name: "Pre-Processing",
     topics: [
       {
         title: "Web Scraping",
-        pagelink: "/pre-processing/web-scraping",
+        pagelink: "web-scraping",
         description: "Information about topic 1",
         links: [
           {
@@ -19,7 +19,7 @@ const PreProcessing = () => {
       },
       {
         title: "Vector Representation",
-        pagelink: "/pre-processing/vectorization",
+        pagelink: "vectorization",
         description: "Information about topic 2",
         links: [
           {
@@ -34,4 +34,10 @@ const PreProcessing = () => {
   return ProjectPage({ project_data });
 };
 
-export default PreProcessing;
+export const WebScraping = () => {
+
+}
+
+export const Vectorization = () => {
+
+}

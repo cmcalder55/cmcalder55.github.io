@@ -108,7 +108,16 @@
   .projects-container {
     padding: 20px;
   }
+
+  /* Pages layout */
+  .pages-layout {
+    display: flex;
+  }
   
+  .pages-container {
+    padding: 20px;
+  }
+
   /* Grid layout */
   .grid-container {
     display: grid;

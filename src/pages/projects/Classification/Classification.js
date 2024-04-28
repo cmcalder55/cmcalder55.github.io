@@ -2,72 +2,74 @@
 
 import ProjectPage from "../../ProjectPage";
 
-const Classification = () => {
+let github_link = "View on GitHub";
+
+export const Index = () => {
     const project_data = {
       name: "Classification",
       topics: [
         {
           title: "Music Recommendation Model",
-          pagelink: "/classification/music-recommender",
+          pagelink: "music-recommender",
           description: "Music Recommender",
           links: [
             {
-              text: "View on GitHub",
+              text: github_link,
               url: "https://github.com/cmcalder55/classification/tree/main/music-recommender",
             },
           ],
         },
         {
           title: "Gaussian Mixture Model",
-          pagelink: "/classification/gmm",
+          pagelink: "gmm",
           description: "todo",
           links: [
             {
-              text: "View on GitHub",
+              text: github_link,
               url: "https://github.com/cmcalder55/classification/blob/main/gmm_density.ipynb",
             },
           ],
         },
         {
           title: "Text Clustering",
-          pagelink: "/classification/text-clustering",
+          pagelink: "text-clustering",
           description: "todo",
           links: [
             {
-              text: "View on GitHub",
+              text: github_link,
               url: "https://github.com/cmcalder55/classification/blob/main/text_clustering.ipynb",
             },
           ],
         },
         {
           title: "Naive-Bayes",
-          pagelink: "/classification/naive-bayes",
+          pagelink: "naive-bayes",
           description: "todo",
           links: [
             {
-              text: "View on GitHub",
+              text: github_link,
               url: "https://github.com/cmcalder55/classification/blob/main/naive-bayes.ipynb",
             },
           ],
         },
         {
           title: "Linear SVM",
-          pagelink: "/classification/linear-svm",
+          pagelink: "linear-svm",
           description: "todo",
           links: [
             {
-              text: "View on GitHub",
+              text: github_link,
               url: "https://github.com/cmcalder55/classification/blob/main/linear_svm.ipynb",
             },
           ],
         },
         {
           title: "Decision Tree",
-          pagelink: "/classification/decision-tree",
+          pagelink: "decision-tree",
           description: "todo",
           links: [
             {
-              text: "View on GitHub",
+              text: github_link,
               url: "https://github.com/cmcalder55/classification/blob/main/decision_tree_classifier.ipynb",
             },
           ],
@@ -78,4 +80,26 @@ const Classification = () => {
     return ProjectPage({ project_data });
   };
   
-  export default Classification;
+export const NB = () => {
+  
+}
+
+export const SVM = () => {
+  
+}
+
+export const GMM = () => {
+  
+}
+
+export const MusicRec = () => {
+  
+}
+
+export const TextClustering = () => {
+  
+}
+
+export const DecisionTree = () => {
+  
+}

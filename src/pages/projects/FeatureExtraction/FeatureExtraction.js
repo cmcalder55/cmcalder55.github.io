@@ -2,13 +2,13 @@
 
 import ProjectPage from "../../ProjectPage";
 
-const FeatureExtraction = () => {
+export const Index = () => {
   const project_data = {
     name: "Feature Extraction",
     topics: [
       {
         title: "Autoencoder",
-        pagelink: "/feature-extraction/autoencoder",
+        pagelink: "autoencoder",
         description: "Information about topic 1",
         links: [
           {
@@ -19,7 +19,7 @@ const FeatureExtraction = () => {
       },
       {
         title: "Hidden Layer Network",
-        pagelink: "/feature-extraction/hidden-layer",
+        pagelink: "hidden-layer",
         description: "Information about topic 2",
         links: [
           {
@@ -30,7 +30,7 @@ const FeatureExtraction = () => {
       },
       {
         title: "Semantic Network Analysis",
-        pagelink: "/feature-extraction/semantic-net",
+        pagelink: "semantic-net",
         description: "Information about topic 2",
         links: [
           {
@@ -41,7 +41,7 @@ const FeatureExtraction = () => {
       },
       {
         title: "Vector Embedding",
-        pagelink: "/feature-extraction/embedding",
+        pagelink: "embedding",
         description: "Information about topic 2",
         links: [
           {
@@ -56,4 +56,18 @@ const FeatureExtraction = () => {
   return ProjectPage({ project_data });
 };
 
-export default FeatureExtraction;
+export const Autoencoder = () => {
+
+}
+
+export const Hidden = () => {
+
+}
+
+export const Semantic = () => {
+
+}
+
+export const Embedding = () => {
+
+}

@@ -2,13 +2,13 @@
 
 import ProjectPage from "../../ProjectPage";
 
-const Optimization = () => {
+export const Index = () => {
   const project_data = {
     name: "Optimization",
     topics: [
       {
         title: "Urban Planning with Genetic Algorithms",
-        pagelink: "/optimization/gen-alg",
+        pagelink: "gen-alg",
         description: "gen_alg",
         links: [
           {
@@ -19,7 +19,7 @@ const Optimization = () => {
       },
       {
         title: "Linear Regression Models",
-        pagelink: "/optimization/lin-reg",
+        pagelink: "lin-reg",
         description: "Information about topic 2",
         links: [
           {
@@ -30,7 +30,7 @@ const Optimization = () => {
       },
       {
         title: "Log-Barrier Optimization",
-        pagelink: "/optimization/log-barrier",
+        pagelink: "log-barrier",
         description: "Information about topic",
         links: [
           {
@@ -41,7 +41,7 @@ const Optimization = () => {
       },
       {
         title: "Gradient Descent Methods",
-        pagelink: "/optimization/gradient-descent",
+        pagelink: "gradient-descent",
         description: "Information about topic 2",
         links: [
           {
@@ -52,7 +52,7 @@ const Optimization = () => {
       },
       {
         title: "Matrix Factorization",
-        pagelink: "/optimization/matrix-fac",
+        pagelink: "matrix-fac",
         description: "Information about topic 2",
         links: [
           {
@@ -63,7 +63,7 @@ const Optimization = () => {
       },
       {
         title: "Bayes Estimation",
-        pagelink: "/optimization/bayes-est",
+        pagelink: "bayes-est",
         description: "Information about topic 2",
         links: [
           {
@@ -74,7 +74,7 @@ const Optimization = () => {
       },
       {
         title: "Stochastic Backpropegation",
-        pagelink: "/optimization/stoc-backprop",
+        pagelink: "stoc-backprop",
         description: "Information about topic 2",
         links: [
           {
@@ -89,4 +89,30 @@ const Optimization = () => {
   return ProjectPage({ project_data });
 };
 
-export default Optimization;
+export const GenAlg = () => {
+
+}
+
+export const LinAlg = () => {
+
+}
+
+export const LogBarrier = () => {
+
+}
+
+export const GradientDescent = () => {
+
+}
+
+export const Factorization = () => {
+
+}
+
+export const BayesEst = () => {
+
+}
+
+export const Backprop = () => {
+
+}

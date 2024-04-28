@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import "../styles/style.css";
 
-const ProjectPage = ({ project_data }) => {
+const OnePage = ({ project_data }) => {
   let navigate = useNavigate();
 
   const handleClick = (url) => {
@@ -14,12 +14,13 @@ const ProjectPage = ({ project_data }) => {
       {project_data.topics.map((topic, index) => (
         <div
           key={index}
+          href={topic.pagelink}
           className="topic-container"
           onClick={() => handleClick(topic.pagelink)}
         >
           <div className="topic-text-content">
             <h2>
-              <a href={topic.pagelink} className="topic-title">
+              <a className="topic-title">
                 {topic.title}
               </a>
             </h2>
@@ -45,4 +46,4 @@ const ProjectPage = ({ project_data }) => {
   );
 };
 
-export default ProjectPage;
+export default OnePage;

@@ -2,13 +2,13 @@
 
 import ProjectPage from "../../ProjectPage";
 
-const DbAppDev = () => {
+export const Index = () => {
     const project_data = {
       name: "DB / App Development",
       topics: [
         {
           title: "Blender3D Flower Generator",
-          pagelink: "/db-app-dev/flower-generator",
+          pagelink: "flower-generator",
           description: "todo",
           links: [
             {
@@ -19,7 +19,7 @@ const DbAppDev = () => {
         },
         {
           title: "Navali's Oracle",
-          pagelink: "/db-app-dev/navalis-oracle",
+          pagelink: "navalis-oracle",
           description: "todo",
           links: [
             {
@@ -34,4 +34,10 @@ const DbAppDev = () => {
     return ProjectPage({ project_data });
   };
   
-  export default DbAppDev;
+export const Flower = () => {
+
+}
+
+export const Oracle = () => {
+
+}
