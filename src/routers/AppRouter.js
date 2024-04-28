@@ -11,13 +11,21 @@ import Home from "../pages/Home";
 import NoPage from "../pages/NoPage";
 import About from "../pages/About";
 import Projects from "../pages/Projects";
-import * as ANN from "../pages/projects/ArtificialNeuralNet/ANN"
-import * as Automation from "../pages/projects/AutomationAndControls/Automation";
-import * as Classification from "../pages/projects/Classification/Classification"
+
+import ANN from "../pages/projects/ArtificialNeuralNet/ANN"
+import * as AnnPages from "../pages/projects/ArtificialNeuralNet/subpages"
+import AutomationAndControls from "../pages/projects/AutomationAndControls/AutomationAndControls";
+import * as AutomationPages from "../pages/projects/AutomationAndControls/subpages";
+import Classification from "../pages/projects/Classification/Classification"
+import * as ClassificationPages from "../pages/projects/Classification/subpages"
 import * as DbAppDev from "../pages/projects/DbAppDevelopment/DbAppDevelopment"
-import * as FeatureExtraction from "../pages/projects/FeatureExtraction/FeatureExtraction"
-import * as Optimization from "../pages/projects/Optimization/Optimization"
-import * as PreProcessing from "../pages/projects/PreProcessing/PreProcessing"
+import * as DbAppDevPages from "../pages/projects/DbAppDevelopment/subpages"
+import FeatureExtraction from "../pages/projects/FeatureExtraction/FeatureExtraction"
+import * as FeatureExtractionPages from "../pages/projects/FeatureExtraction/subpages"
+import Optimization from "../pages/projects/Optimization/Optimization"
+import * as OptimizationPages from "../pages/projects/Optimization/subpages"
+import PreProcessing from "../pages/projects/PreProcessing/PreProcessing"
+import * as PreProcessingPages from "../pages/projects/PreProcessing/subpages"
 
 export default function AppRouter() {
   return (
@@ -35,64 +43,64 @@ export default function AppRouter() {
 
             {/* Artificial Neural Network pages */}
             <Route path="ann" >
-              <Route index element={<ANN.Index />} />
-              <Route path="cnn" element={<ANN.CNN />} />
-              <Route path="ltsm" element={<ANN.LTSM />} />
-              <Route path="rnn" element={<ANN.RNN />} />
+              <Route index element={<ANN />} />
+              <Route path="cnn"               element={<AnnPages.CNN />} />
+              <Route path="lstm"              element={<AnnPages.LSTM />} />
+              <Route path="rnn"               element={<AnnPages.RNN />} />
             </Route>
 
             {/* Automation and Control Systems pages */}
             <Route path="automation-and-controls" >
-              <Route index element={<Automation.Index />} />
-              <Route path="ua-robotics" element={<Automation.UaRobotics />} />
-              <Route path="pi-controller" element={<Automation.PiController />} />
-              <Route path="path-planning" element={<Automation.PathFindingSim />} />
+              <Route index element={<AutomationAndControls />} />
+              <Route path="ua-robotics"       element={<AutomationPages.UaRobotics />} />
+              <Route path="pi-controller"     element={<AutomationPages.PiController />} />
+              <Route path="path-planning"     element={<AutomationPages.PathFindingSim />} />
             </Route>
 
             {/* Classification pages */}
             <Route path="classification" >
-              <Route index element={<Classification.Index />} />
-              <Route path="music-recommender" element={<Classification.MusicRec />} />
-              <Route path="gmm" element={<Classification.GMM />} />
-              <Route path="text-clustering" element={<Classification.TextClustering />} />
-              <Route path="naive-bayes" element={<Classification.NB />} />
-              <Route path="linear-svm" element={<Classification.SVM />} />
-              <Route path="decision-tree" element={<Classification.DecisionTree />} />
+              <Route index element={<Classification />} />
+              <Route path="music-recommender" element={<ClassificationPages.MusicRec />} />
+              <Route path="gmm"               element={<ClassificationPages.GMM />} />
+              <Route path="text-clustering"   element={<ClassificationPages.TextClustering />} />
+              <Route path="naive-bayes"       element={<ClassificationPages.NB />} />
+              <Route path="linear-svm"        element={<ClassificationPages.SVM />} />
+              <Route path="decision-tree"     element={<ClassificationPages.DecisionTree />} />
             </Route>
             
             {/* Database / App Development pages */}
             <Route path="db-app-dev" >
-              <Route index element={<DbAppDev.Index />} />
-              <Route path="flower-generator" element={<DbAppDev.Flower />} />
-              <Route path="navalis-oracle" element={<DbAppDev.Oracle />} />
+              <Route index element={<DbAppDev />} />
+              <Route path="flower-generator"  element={<DbAppDevPages.Flower />} />
+              <Route path="navalis-oracle"    element={<DbAppDevPages.Oracle />} />
             </Route>
 
             {/* Feature Extraction pages */}
             <Route path="feature-extraction" >
-              <Route index element={<FeatureExtraction.Index />} />
-              <Route path="autoencoder" element={<FeatureExtraction.Autoencoder />} />
-              <Route path="hidden-layer" element={<FeatureExtraction.Hidden />} />
-              <Route path="semantic-net" element={<FeatureExtraction.Semantic />} />
-              <Route path="embedding" element={<FeatureExtraction.Embedding />} />
+              <Route index element={<FeatureExtraction />} />
+              <Route path="autoencoder"       element={<FeatureExtractionPages.Autoencoder />} />
+              <Route path="hidden-layer"      element={<FeatureExtractionPages.Hidden />} />
+              <Route path="semantic-net"      element={<FeatureExtractionPages.Semantic />} />
+              <Route path="embedding"         element={<FeatureExtractionPages.Embedding />} />
             </Route>
 
             {/* Optimization pages */}
             <Route path="optimization" >
-            <Route index element={<Optimization.Index />} />
-              <Route path="gen-alg" element={<Optimization.GenAlg />} />
-              <Route path="lin-reg" element={<Optimization.LinAlg />} />
-              <Route path="log-barrier" element={<Optimization.LogBarrier />} />
-              <Route path="gradient-descent" element={<Optimization.GradientDescent />} />
-              <Route path="matrix-fac" element={<Optimization.Factorization />} />
-              <Route path="bayes-est" element={<Optimization.BayesEst />} />
-              <Route path="stoc-backprop" element={<Optimization.Backprop />} />
+            <Route index element={<Optimization />} />
+              <Route path="gen-alg"           element={<OptimizationPages.GenAlg />} />
+              <Route path="lin-reg"           element={<OptimizationPages.LinAlg />} />
+              <Route path="log-barrier"       element={<OptimizationPages.LogBarrier />} />
+              <Route path="gradient-descent"  element={<OptimizationPages.GradientDescent />} />
+              <Route path="matrix-fac"        element={<OptimizationPages.Factorization />} />
+              <Route path="bayes-est"         element={<OptimizationPages.BayesEst />} />
+              <Route path="stoc-backprop"     element={<OptimizationPages.Backprop />} />
             </Route>
 
             {/* Pre-Processing pages */}
             <Route path="pre-processing" >
-              <Route index element={<PreProcessing.Index />} />
-              <Route path="web-scraping" element={<PreProcessing.WebScraping />} />
-              <Route path="vectorization" element={<PreProcessing.Vectorization />} />
+              <Route index element={<PreProcessing />} />
+              <Route path="web-scraping"      element={<PreProcessingPages.WebScraping />} />
+              <Route path="vectorization"     element={<PreProcessingPages.Vectorization />} />
             </Route>
 
           </Route>

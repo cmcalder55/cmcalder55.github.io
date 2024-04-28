@@ -1,8 +1,9 @@
-// Filename - pages/projects/Classification/DbAppDevelopment.js
+// Filename - pages/projects/DbAppDevelopment/DbAppDevelopment.js
 
 import ProjectPage from "../../ProjectPage";
+import links from "../../../components/linkMetadata";
 
-export const Index = () => {
+const DbAppDevelopment = () => {
     const project_data = {
       name: "DB / App Development",
       topics: [
@@ -10,23 +11,13 @@ export const Index = () => {
           title: "Blender3D Flower Generator",
           pagelink: "flower-generator",
           description: "todo",
-          links: [
-            {
-              text: "View on GitHub",
-              url: "https://github.com/cmcalder55/flower-generator",
-            },
-          ],
+          url: links.flowerGen.url
         },
         {
           title: "Navali's Oracle",
           pagelink: "navalis-oracle",
           description: "todo",
-          links: [
-            {
-              text: "View on GitHub",
-              url: "https://github.com/cmcalder55/navalis-oracle",
-            },
-          ],
+          url: links.PoeOracle.url
         },
       ],
     };
@@ -34,10 +25,4 @@ export const Index = () => {
     return ProjectPage({ project_data });
   };
   
-export const Flower = () => {
-
-}
-
-export const Oracle = () => {
-
-}
+export default DbAppDevelopment;

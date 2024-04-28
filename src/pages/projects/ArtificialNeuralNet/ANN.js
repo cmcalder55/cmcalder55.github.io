@@ -1,10 +1,9 @@
 // Filename - pages/projects/ANN.js
 
 import ProjectPage from "../../ProjectPage";
+import links from "../../../components/linkMetadata";
 
-let github_link = "View on GitHub";
-
-export const Index = () => {
+const ANN = () => {
     const project_data = {
       name: "Artificial Neural Networks",
       topics: [
@@ -12,50 +11,25 @@ export const Index = () => {
           title: "Convolutional Neural Network",
           pagelink: "cnn",
           description: "Blender3D Python script to generate cherry blossoms.",
-          links: [
-            {
-              text: github_link,
-              url: "https://github.com/cmcalder55/ann/tree/main/cnn",
-            },
-          ],
+          url: links.cnn.url
         },
         {
           title: "Long Short-Term Memory Network",
-          pagelink: "ltsm",
+          pagelink: "lstm",
           description: "Information about topic 2",
-          links: [
-            {
-              text: github_link,
-              url: "https://github.com/cmcalder55/ann/tree/main/ltsm",
-            },
-          ],
+          url: links.lstm.url
         },
         {
             title: "Residual Network",
             pagelink: "rnn",
             description: "Information about topic 2",
-            links: [
-              {
-                text: github_link,
-                url: "https://github.com/cmcalder55/ann/tree/main/rnn",
-              },
-            ],
+            url: links.rnn.url
           },
       ],
     };
   
     return ProjectPage({ project_data });
   };
-  
-export const CNN = () => {
 
-}
-
-export const LTSM = () => {
-  
-}
-
-export const RNN = () => {
-  
-}
+export default ANN;
   

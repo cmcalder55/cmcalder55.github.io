@@ -1,8 +1,9 @@
 // Filename - pages/projects/FeatureExtraction/FeatureExtraction.js
 
 import ProjectPage from "../../ProjectPage";
+import links from "../../../components/linkMetadata";
 
-export const Index = () => {
+const FeatureExtraction = () => {
   const project_data = {
     name: "Feature Extraction",
     topics: [
@@ -10,45 +11,25 @@ export const Index = () => {
         title: "Autoencoder",
         pagelink: "autoencoder",
         description: "Information about topic 1",
-        links: [
-          {
-            text: "View on GitHub",
-            url: "https://github.com/cmcalder55/placeholder",
-          },
-        ],
+        url: links.autoEn.url
       },
       {
         title: "Hidden Layer Network",
         pagelink: "hidden-layer",
         description: "Information about topic 2",
-        links: [
-          {
-            text: "View on GitHub",
-            url: "https://github.com/cmcalder55/placeholder",
-          },
-        ],
+        url: links.hidden.url
       },
       {
         title: "Semantic Network Analysis",
         pagelink: "semantic-net",
         description: "Information about topic 2",
-        links: [
-          {
-            text: "View on GitHub",
-            url: "https://github.com/cmcalder55/placeholder",
-          },
-        ],
+        url: links.semanticNet.url
       },
       {
         title: "Vector Embedding",
         pagelink: "embedding",
         description: "Information about topic 2",
-        links: [
-          {
-            text: "View on GitHub",
-            url: "https://github.com/cmcalder55/placeholder",
-          },
-        ],
+        url: links.vecEmbed.url
       },
     ],
   };
@@ -56,18 +37,4 @@ export const Index = () => {
   return ProjectPage({ project_data });
 };
 
-export const Autoencoder = () => {
-
-}
-
-export const Hidden = () => {
-
-}
-
-export const Semantic = () => {
-
-}
-
-export const Embedding = () => {
-
-}
+export default FeatureExtraction;

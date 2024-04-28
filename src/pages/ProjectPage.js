@@ -1,5 +1,10 @@
+
 import { useNavigate } from "react-router-dom";
+
+import RepoLink from "../components/GitHubButton";
+
 import "../styles/style.css";
+
 
 const ProjectPage = ({ project_data }) => {
   let navigate = useNavigate();
@@ -25,18 +30,10 @@ const ProjectPage = ({ project_data }) => {
             </h2>
             <p>{topic.description}</p>
             <div>
-              {topic.links.map((link, linkIndex) => (
-                <a
-                  key={linkIndex}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="github-link"
-                  onClick={() => handleClick(link.url)}
-                >
-                  {link.text}
-                </a>
-              ))}
+              <RepoLink 
+                link={topic.url} 
+                onClick={() => handleClick(topic.url)}
+              />
             </div>
           </div>
         </div>

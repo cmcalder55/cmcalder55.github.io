@@ -1,8 +1,9 @@
 // Filename - pages/projects/PreProcessing.js
 
 import ProjectPage from "../../ProjectPage";
+import links from "../../../components/linkMetadata";
 
-export const Index = () => {
+const PreProcessing = () => {
   const project_data = {
     name: "Pre-Processing",
     topics: [
@@ -10,23 +11,13 @@ export const Index = () => {
         title: "Web Scraping",
         pagelink: "web-scraping",
         description: "Information about topic 1",
-        links: [
-          {
-            text: "View on GitHub",
-            url: "https://github.com/cmcalder55/pre-processing/tree/main/web-scraping",
-          },
-        ],
+        url: links.scrape.url
       },
       {
         title: "Vector Representation",
         pagelink: "vectorization",
         description: "Information about topic 2",
-        links: [
-          {
-            text: "View on GitHub",
-            url: "https://github.com/cmcalder55/pre-processing/tree/main/vector-representation",
-          },
-        ],
+        url: links.toVector.url
       },
     ],
   };
@@ -34,10 +25,4 @@ export const Index = () => {
   return ProjectPage({ project_data });
 };
 
-export const WebScraping = () => {
-
-}
-
-export const Vectorization = () => {
-
-}
+export default PreProcessing;

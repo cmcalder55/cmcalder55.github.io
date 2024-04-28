@@ -1,8 +1,9 @@
 // Filename - pages/projects/Optimization/Optimization.js
 
 import ProjectPage from "../../ProjectPage";
+import links from "../../../components/linkMetadata";
 
-export const Index = () => {
+const Optimization = () => {
   const project_data = {
     name: "Optimization",
     topics: [
@@ -10,78 +11,43 @@ export const Index = () => {
         title: "Urban Planning with Genetic Algorithms",
         pagelink: "gen-alg",
         description: "gen_alg",
-        links: [
-          {
-            text: "View on GitHub",
-            url: "https://github.com/cmcalder55/optimization/tree/main/genetic_algorithm",
-          },
-        ],
+        url: links.genAlg.url
       },
       {
         title: "Linear Regression Models",
         pagelink: "lin-reg",
         description: "Information about topic 2",
-        links: [
-          {
-            text: "View on GitHub",
-            url: "https://github.com/cmcalder55/optimization/tree/main/linear_regression",
-          },
-        ],
+        url: links.linReg.url
       },
       {
         title: "Log-Barrier Optimization",
         pagelink: "log-barrier",
         description: "Information about topic",
-        links: [
-          {
-            text: "View on GitHub",
-            url: "https://github.com/cmcalder55/optimization/tree/main/log_barrier",
-          },
-        ],
+        url: links.logBar.url
       },
       {
         title: "Gradient Descent Methods",
         pagelink: "gradient-descent",
         description: "Information about topic 2",
-        links: [
-          {
-            text: "View on GitHub",
-            url: "https://github.com/cmcalder55/optimization/tree/main/gradient_descent",
-          },
-        ],
+        url: links.gradDesc.url
       },
       {
         title: "Matrix Factorization",
         pagelink: "matrix-fac",
         description: "Information about topic 2",
-        links: [
-          {
-            text: "View on GitHub",
-            url: "https://github.com/cmcalder55/optimization/tree/main/matrix_factorization",
-          },
-        ],
+        url: links.matFac.url
       },
       {
         title: "Bayes Estimation",
         pagelink: "bayes-est",
         description: "Information about topic 2",
-        links: [
-          {
-            text: "View on GitHub",
-            url: "https://github.com/cmcalder55/optimization/tree/main/bayes_estimation",
-          },
-        ],
+        url: links.bayesEst.url
       },
       {
         title: "Stochastic Backpropegation",
         pagelink: "stoc-backprop",
         description: "Information about topic 2",
-        links: [
-          {
-            text: "View on GitHub",
-            url: "https://github.com/cmcalder55/optimization/tree/main/stochastic_backpropegation",
-          },
-        ],
+        url: links.stocProp.url
       },
     ],
   };
@@ -89,30 +55,4 @@ export const Index = () => {
   return ProjectPage({ project_data });
 };
 
-export const GenAlg = () => {
-
-}
-
-export const LinAlg = () => {
-
-}
-
-export const LogBarrier = () => {
-
-}
-
-export const GradientDescent = () => {
-
-}
-
-export const Factorization = () => {
-
-}
-
-export const BayesEst = () => {
-
-}
-
-export const Backprop = () => {
-
-}
+export default Optimization;
