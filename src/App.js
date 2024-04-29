@@ -2,7 +2,7 @@
 // Homepage
 
 import AppRouter from "./routers/AppRouter";
-// import './App.css';
+import './App.css';
 
 export default function App() {
   return (
@@ -11,4 +11,4 @@ export default function App() {
       <AppRouter />
     </div>
   );
-}
+};

@@ -80,11 +80,15 @@ const HomeLayout = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/interests/fun_games" className="dropdown-link">
+                  <NavLink to="/interests/games" className="dropdown-link">
                     Games
                   </NavLink>
                 </li>
-                {/* Add more projects here */}
+                <li>
+                  <NavLink to="/interests/technical" className="dropdown-link">
+                    Technical Papers
+                  </NavLink>
+                </li>
               </ul>
             }
           </li>

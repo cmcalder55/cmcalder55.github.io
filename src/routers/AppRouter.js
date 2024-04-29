@@ -6,26 +6,30 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProjectsLayout from "../components/ProjectsLayout";
 import HomeLayout from "../components/HomeLayout";
 
-import Interests from "../pages/Interests";
+import Interests from "../pages/InterestsPage";
+import Art from "../pages/interests/Art";
+import Bookshelf from "../pages/interests/Bookshelf";
+import Technical from "../pages/interests/Technical";
+import Games from "../pages/interests/Games";
 import Home from "../pages/Home";
 import NoPage from "../pages/NoPage";
 import About from "../pages/About";
 import Projects from "../pages/Projects";
 
-import ANN from "../pages/projects/ArtificialNeuralNet/ANN"
-import * as AnnPages from "../pages/projects/ArtificialNeuralNet/subpages"
+import ANN from "../pages/projects/ArtificialNeuralNet/ANN";
+import * as AnnPages from "../pages/projects/ArtificialNeuralNet/subpages";
 import AutomationAndControls from "../pages/projects/AutomationAndControls/AutomationAndControls";
 import * as AutomationPages from "../pages/projects/AutomationAndControls/subpages";
-import Classification from "../pages/projects/Classification/Classification"
-import * as ClassificationPages from "../pages/projects/Classification/subpages"
-import * as DbAppDev from "../pages/projects/DbAppDevelopment/DbAppDevelopment"
-import * as DbAppDevPages from "../pages/projects/DbAppDevelopment/subpages"
-import FeatureExtraction from "../pages/projects/FeatureExtraction/FeatureExtraction"
-import * as FeatureExtractionPages from "../pages/projects/FeatureExtraction/subpages"
-import Optimization from "../pages/projects/Optimization/Optimization"
-import * as OptimizationPages from "../pages/projects/Optimization/subpages"
-import PreProcessing from "../pages/projects/PreProcessing/PreProcessing"
-import * as PreProcessingPages from "../pages/projects/PreProcessing/subpages"
+import Classification from "../pages/projects/Classification/Classification";
+import * as ClassificationPages from "../pages/projects/Classification/subpages";
+import * as DbAppDev from "../pages/projects/DbAppDevelopment/DbAppDevelopment";
+import * as DbAppDevPages from "../pages/projects/DbAppDevelopment/subpages";
+import FeatureExtraction from "../pages/projects/FeatureExtraction/FeatureExtraction";
+import * as FeatureExtractionPages from "../pages/projects/FeatureExtraction/subpages";
+import Optimization from "../pages/projects/Optimization/Optimization";
+import * as OptimizationPages from "../pages/projects/Optimization/subpages";
+import PreProcessing from "../pages/projects/PreProcessing/PreProcessing";
+import * as PreProcessingPages from "../pages/projects/PreProcessing/subpages";
 
 export default function AppRouter() {
   return (
@@ -106,11 +110,14 @@ export default function AppRouter() {
           </Route>
 
           {/* interests pages */}
-          <Route path="interests" element={<Interests />} />
-          {/* <Route path="interests/bookshelf" element={<Optimization />} />
-          <Route path="interests/art" element={<Optimization />} />
-          <Route path="interests/games" element={<Optimization />} />
-          <Route path="interests/technical" element={<Optimization />} /> */}
+          {/* <Route path="interests" element={<Interests />} /> */}
+          <Route path="interests" >
+            <Route index element={<Interests />} />
+              <Route path="bookshelf"           element={<Bookshelf />} />
+              <Route path="art"                 element={<Art />} />
+              <Route path="games"               element={<Games />} />
+              <Route path="technical"           element={<Technical />} />
+          </Route>
 
           {/* Catch any undefined URLs (404 error) */}
           <Route path="*" element={<NoPage />} />
