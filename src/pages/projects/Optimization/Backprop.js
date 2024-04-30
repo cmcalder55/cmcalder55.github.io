@@ -3,7 +3,7 @@ import handleClick from "../../ProjectPage";
 import links from "../../../components/linkMetadata";
 import RepoLink from "../../../components/GitHubButton";
 
-export const Backprop = () => {
+const Backprop = () => {
     return (
       <div>
         <h1>Stochastic Backpropegation</h1>
@@ -16,3 +16,5 @@ export const Backprop = () => {
       </div>
     )
   }
+
+export default Backprop;

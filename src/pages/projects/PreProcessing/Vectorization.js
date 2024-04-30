@@ -3,7 +3,7 @@ import handleClick from "../../ProjectPage";
 import links from "../../../components/linkMetadata";
 import RepoLink from "../../../components/GitHubButton";
 
-export const Vectorization = () => {
+const Vectorization = () => {
     return (
         <div>
           <h1>Vectorization</h1>
@@ -17,3 +17,4 @@ export const Vectorization = () => {
       );
     };
     
+export default Vectorization;

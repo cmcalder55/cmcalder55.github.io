@@ -3,8 +3,7 @@ import handleClick from "../../ProjectPage";
 import links from "../../../components/linkMetadata";
 import RepoLink from "../../../components/GitHubButton";
 
-
-export const Embedding = () => {
+const Embedding = () => {
     <div>
         <h1>Vector Embedding</h1>
         {/* Link to GitHub repository */}
@@ -15,3 +14,5 @@ export const Embedding = () => {
         <p>Placeholder</p>
   </div>
 }
+
+export default Embedding;

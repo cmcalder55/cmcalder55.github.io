@@ -2,8 +2,7 @@ import handleClick from "../../ProjectPage";
 import links from "../../../components/linkMetadata";
 import RepoLink from "../../../components/GitHubButton";
 
-
-export const WebScraping = () => {
+const WebScraping = () => {
     return (
         <div>
           <h1>Web Scraping</h1>
@@ -17,3 +16,4 @@ export const WebScraping = () => {
       );
     };
     
+export default WebScraping;

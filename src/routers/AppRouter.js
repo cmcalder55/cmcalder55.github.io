@@ -4,7 +4,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import HomeLayout from "../components/HomeLayout";
-import Interests from "../pages/InterestsPage";
+import Interests from "../pages/interests/Interests";
 import Art from "../pages/interests/Art";
 import Bookshelf from "../pages/interests/Bookshelf";
 import Technical from "../pages/interests/Technical";
@@ -56,8 +56,6 @@ import LogBarrier from "../pages/projects/Optimization/LogBarrier";
 import PreProcessing from "../pages/projects/PreProcessing/PreProcessing";
 import WebScraping from "../pages/projects/PreProcessing/WebScraping";
 import Vectorization from "../pages/projects/PreProcessing/Vectorization";
-
-// import links from "../components/linkMetadata";
 
 export default function AppRouter() {
   return (

@@ -3,7 +3,7 @@ import handleClick from "../../ProjectPage";
 import links from "../../../components/linkMetadata";
 import RepoLink from "../../../components/GitHubButton";
 
-export const Factorization = () => {
+const Factorization = () => {
     return (
       <div>
         <h1>Matrix Factorization</h1>
@@ -16,3 +16,5 @@ export const Factorization = () => {
       </div>
     )
   }
+
+export default Factorization;

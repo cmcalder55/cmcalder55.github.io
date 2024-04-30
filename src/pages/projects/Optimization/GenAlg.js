@@ -3,7 +3,7 @@ import handleClick from "../../ProjectPage";
 import links from "../../../components/linkMetadata";
 import RepoLink from "../../../components/GitHubButton";
 
-export const GenAlg = () => {
+const GenAlg = () => {
     return (
       <div>
         <h1>Genetic Algorithms</h1>
@@ -17,3 +17,4 @@ export const GenAlg = () => {
     )
   }
   
+export default GenAlg;

@@ -1,8 +1,9 @@
+
 import handleClick from "../../ProjectPage";
 import links from "../../../components/linkMetadata";
 import RepoLink from "../../../components/GitHubButton";
 
-export const Autoencoder = () => {
+const Autoencoder = () => {
     <div>
         <h1>Auto-Encoder</h1>
         {/* Link to GitHub repository */}
@@ -13,3 +14,5 @@ export const Autoencoder = () => {
         <p>Placeholder</p>
   </div>
 }
+
+export default Autoencoder;

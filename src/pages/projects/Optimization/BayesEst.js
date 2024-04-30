@@ -3,7 +3,7 @@ import handleClick from "../../ProjectPage";
 import links from "../../../components/linkMetadata";
 import RepoLink from "../../../components/GitHubButton";
 
-export const BayesEst = () => {
+const BayesEst = () => {
     return (
       <div>
         <h1>Bayes Estimation</h1>
@@ -16,3 +16,5 @@ export const BayesEst = () => {
       </div>
       )
   }
+
+export default BayesEst;

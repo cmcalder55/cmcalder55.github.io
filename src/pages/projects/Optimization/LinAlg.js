@@ -3,7 +3,7 @@ import handleClick from "../../ProjectPage";
 import links from "../../../components/linkMetadata";
 import RepoLink from "../../../components/GitHubButton";
 
-export const LinAlg = () => {
+const LinAlg = () => {
     return (    
       <div>
         <h1>Linear Regression</h1>
@@ -15,4 +15,5 @@ export const LinAlg = () => {
         <p>Placeholder</p>
       </div>
     )
-  }
+  }  
+export default LinAlg;

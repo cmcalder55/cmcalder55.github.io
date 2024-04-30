@@ -3,7 +3,7 @@ import handleClick from "../../ProjectPage";
 import links from "../../../components/linkMetadata";
 import RepoLink from "../../../components/GitHubButton";
 
-export const Semantic = () => {
+const Semantic = () => {
     <div>
         <h1>Semantic Network Analysis</h1>
         {/* Link to GitHub repository */}
@@ -14,3 +14,5 @@ export const Semantic = () => {
         <p>Placeholder</p>
   </div>
 }
+
+export default Semantic;

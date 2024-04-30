@@ -3,8 +3,7 @@ import handleClick from "../../ProjectPage";
 import links from "../../../components/linkMetadata";
 import RepoLink from "../../../components/GitHubButton";
 
-
-export const Hidden = () => {
+const Hidden = () => {
     <div>
         <h1>Hidden Layer Network</h1>
         {/* Link to GitHub repository */}
@@ -15,3 +14,5 @@ export const Hidden = () => {
         <p>Placeholder</p>
   </div>
 }
+
+export default Hidden;

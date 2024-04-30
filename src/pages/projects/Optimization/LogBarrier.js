@@ -3,7 +3,7 @@ import handleClick from "../../ProjectPage";
 import links from "../../../components/linkMetadata";
 import RepoLink from "../../../components/GitHubButton";
 
-export const LogBarrier = () => {
+const LogBarrier = () => {
     return (    
       <div>
         <h1>Log-Barrier Optimization</h1>
@@ -16,4 +16,5 @@ export const LogBarrier = () => {
       </div>
     )
   }
-  
+
+export default LogBarrier;
