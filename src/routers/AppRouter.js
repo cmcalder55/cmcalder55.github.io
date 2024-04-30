@@ -34,17 +34,28 @@ import { NB } from "../pages/projects/Classification/NB";
 import { SVM } from "../pages/projects/Classification/SVM";
 import DecisionTree from "../pages/projects/Classification/DecisionTree";
 
-import * as DbAppDev from "../pages/projects/DbAppDevelopment/DbAppDevelopment";
-import * as DbAppDevPages from "../pages/projects/DbAppDevelopment/subpages";
+import DbAppDev from "../pages/projects/DbAppDevelopment/DbAppDevelopment";
+import { FlowerGen } from "../pages/projects/DbAppDevelopment/FlowerGen";
+import { Oracle } from "../pages/projects/DbAppDevelopment/Oracle";
 
 import FeatureExtraction from "../pages/projects/FeatureExtraction/FeatureExtraction";
-import * as FeatureExtractionPages from "../pages/projects/FeatureExtraction/subpages";
+import Autoencoder from "../pages/projects/FeatureExtraction/Autoencoder"
+import Hidden from "../pages/projects/FeatureExtraction/Hidden"
+import Semantic from "../pages/projects/FeatureExtraction/Semantic"
+import Embedding from "../pages/projects/FeatureExtraction/Embedding"
 
 import Optimization from "../pages/projects/Optimization/Optimization";
-import * as OptimizationPages from "../pages/projects/Optimization/subpages";
+import Backprop from "../pages/projects/Optimization/Backprop";
+import BayesEst from "../pages/projects/Optimization/BayesEst";
+import Factorization from "../pages/projects/Optimization/Factorization";
+import GenAlg from "../pages/projects/Optimization/GenAlg";
+import GradientDescent from "../pages/projects/Optimization/GradientDescent";
+import LinAlg from "../pages/projects/Optimization/LinAlg";
+import LogBarrier from "../pages/projects/Optimization/LogBarrier";
 
 import PreProcessing from "../pages/projects/PreProcessing/PreProcessing";
-import * as PreProcessingPages from "../pages/projects/PreProcessing/subpages";
+import WebScraping from "../pages/projects/PreProcessing/WebScraping";
+import Vectorization from "../pages/projects/PreProcessing/Vectorization";
 
 // import links from "../components/linkMetadata";
 
@@ -92,36 +103,36 @@ export default function AppRouter() {
             {/* Database / App Development pages */}
             <Route path="db-app-dev" >
               <Route index element={<DbAppDev />} />
-              <Route path="flower-generator"  element={<DbAppDevPages.Flower />} />
-              <Route path="navalis-oracle"    element={<DbAppDevPages.Oracle />} />
+              <Route path="flower-generator"  element={<FlowerGen />} />
+              <Route path="navalis-oracle"    element={<Oracle />} />
             </Route>
 
             {/* Feature Extraction pages */}
             <Route path="feature-extraction" >
               <Route index element={<FeatureExtraction />} />
-              <Route path="autoencoder"       element={<FeatureExtractionPages.Autoencoder />} />
-              <Route path="hidden-layer"      element={<FeatureExtractionPages.Hidden />} />
-              <Route path="semantic-net"      element={<FeatureExtractionPages.Semantic />} />
-              <Route path="embedding"         element={<FeatureExtractionPages.Embedding />} />
+              <Route path="autoencoder"       element={<Autoencoder />} />
+              <Route path="hidden-layer"      element={<Hidden />} />
+              <Route path="semantic-net"      element={<Semantic />} />
+              <Route path="embedding"         element={<Embedding />} />
             </Route>
 
             {/* Optimization pages */}
             <Route path="optimization" >
             <Route index element={<Optimization />} />
-              <Route path="gen-alg"           element={<OptimizationPages.GenAlg />} />
-              <Route path="lin-reg"           element={<OptimizationPages.LinAlg />} />
-              <Route path="log-barrier"       element={<OptimizationPages.LogBarrier />} />
-              <Route path="gradient-descent"  element={<OptimizationPages.GradientDescent />} />
-              <Route path="matrix-fac"        element={<OptimizationPages.Factorization />} />
-              <Route path="bayes-est"         element={<OptimizationPages.BayesEst />} />
-              <Route path="stoc-backprop"     element={<OptimizationPages.Backprop />} />
+              <Route path="gen-alg"           element={<GenAlg />} />
+              <Route path="lin-reg"           element={<LinAlg />} />
+              <Route path="log-barrier"       element={<LogBarrier />} />
+              <Route path="gradient-descent"  element={<GradientDescent />} />
+              <Route path="matrix-fac"        element={<Factorization />} />
+              <Route path="bayes-est"         element={<BayesEst />} />
+              <Route path="stoc-backprop"     element={<Backprop />} />
             </Route>
 
             {/* Pre-Processing pages */}
             <Route path="pre-processing" >
               <Route index element={<PreProcessing />} />
-              <Route path="web-scraping"      element={<PreProcessingPages.WebScraping />} />
-              <Route path="vectorization"     element={<PreProcessingPages.Vectorization />} />
+              <Route path="web-scraping"      element={<WebScraping />} />
+              <Route path="vectorization"     element={<Vectorization />} />
             </Route>
 
           </Route>
