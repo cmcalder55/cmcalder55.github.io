@@ -3,33 +3,50 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import ProjectsLayout from "../components/ProjectsLayout";
 import HomeLayout from "../components/HomeLayout";
-
 import Interests from "../pages/InterestsPage";
 import Art from "../pages/interests/Art";
 import Bookshelf from "../pages/interests/Bookshelf";
 import Technical from "../pages/interests/Technical";
 import Games from "../pages/interests/Games";
+
 import Home from "../pages/Home";
 import NoPage from "../pages/NoPage";
 import About from "../pages/About";
-import Projects from "../pages/Projects";
 
+import ProjectsLayout from "../components/ProjectsLayout";
+import Projects from "../pages/Projects";
 import ANN from "../pages/projects/ArtificialNeuralNet/ANN";
-import * as AnnPages from "../pages/projects/ArtificialNeuralNet/subpages";
+import RNN from "../pages/projects/ArtificialNeuralNet/RNN";
+import LSTM from "../pages/projects/ArtificialNeuralNet/LSTM";
+import CNN from "../pages/projects/ArtificialNeuralNet/CNN";
+
 import AutomationAndControls from "../pages/projects/AutomationAndControls/AutomationAndControls";
-import * as AutomationPages from "../pages/projects/AutomationAndControls/subpages";
+import { UaRobotics } from "../pages/projects/AutomationAndControls/UaRobotics";
+import { PiController } from "../pages/projects/AutomationAndControls/PiController";
+import { PathFindingSim } from "../pages/projects/AutomationAndControls/PathFindingSim";
+
 import Classification from "../pages/projects/Classification/Classification";
-import * as ClassificationPages from "../pages/projects/Classification/subpages";
+import { MusicRec } from "../pages/projects/Classification/MusicRec";
+import GMM from "../pages/projects/Classification/GMM";
+import { TextClustering } from "../pages/projects/Classification/TextClustering";
+import { NB } from "../pages/projects/Classification/NB";
+import { SVM } from "../pages/projects/Classification/SVM";
+import DecisionTree from "../pages/projects/Classification/DecisionTree";
+
 import * as DbAppDev from "../pages/projects/DbAppDevelopment/DbAppDevelopment";
 import * as DbAppDevPages from "../pages/projects/DbAppDevelopment/subpages";
+
 import FeatureExtraction from "../pages/projects/FeatureExtraction/FeatureExtraction";
 import * as FeatureExtractionPages from "../pages/projects/FeatureExtraction/subpages";
+
 import Optimization from "../pages/projects/Optimization/Optimization";
 import * as OptimizationPages from "../pages/projects/Optimization/subpages";
+
 import PreProcessing from "../pages/projects/PreProcessing/PreProcessing";
 import * as PreProcessingPages from "../pages/projects/PreProcessing/subpages";
+
+// import links from "../components/linkMetadata";
 
 export default function AppRouter() {
   return (
@@ -48,28 +65,28 @@ export default function AppRouter() {
             {/* Artificial Neural Network pages */}
             <Route path="ann" >
               <Route index element={<ANN />} />
-              <Route path="cnn"               element={<AnnPages.CNN />} />
-              <Route path="lstm"              element={<AnnPages.LSTM />} />
-              <Route path="rnn"               element={<AnnPages.RNN />} />
+              <Route path="cnn"               element={<CNN />} />
+              <Route path="lstm"              element={<LSTM />} />
+              <Route path="rnn"               element={<RNN />} />
             </Route>
 
             {/* Automation and Control Systems pages */}
             <Route path="automation-and-controls" >
               <Route index element={<AutomationAndControls />} />
-              <Route path="ua-robotics"       element={<AutomationPages.UaRobotics />} />
-              <Route path="pi-controller"     element={<AutomationPages.PiController />} />
-              <Route path="path-planning"     element={<AutomationPages.PathFindingSim />} />
+              <Route path="ua-robotics"       element={<UaRobotics />} />
+              <Route path="pi-controller"     element={<PiController />} />
+              <Route path="path-planning"     element={<PathFindingSim />} />
             </Route>
 
             {/* Classification pages */}
             <Route path="classification" >
               <Route index element={<Classification />} />
-              <Route path="music-recommender" element={<ClassificationPages.MusicRec />} />
-              <Route path="gmm"               element={<ClassificationPages.GMM />} />
-              <Route path="text-clustering"   element={<ClassificationPages.TextClustering />} />
-              <Route path="naive-bayes"       element={<ClassificationPages.NB />} />
-              <Route path="linear-svm"        element={<ClassificationPages.SVM />} />
-              <Route path="decision-tree"     element={<ClassificationPages.DecisionTree />} />
+              <Route path="music-recommender" element={<MusicRec />} />
+              <Route path="gmm"               element={<GMM />} />
+              <Route path="text-clustering"   element={<TextClustering />} />
+              <Route path="naive-bayes"       element={<NB />} />
+              <Route path="linear-svm"        element={<SVM />} />
+              <Route path="decision-tree"     element={<DecisionTree />} />
             </Route>
             
             {/* Database / App Development pages */}

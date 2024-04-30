@@ -1,215 +1,245 @@
 /* Layout.css */
 
 .outlet {
-    flex-grow: 1;
-    padding: 20px;
-    overflow-y: auto;
-  }
-  
-  main {
-    flex-grow: 1;
-    padding: 10px; /* Adjust padding as needed */
-    background-color: #2d2e2e; /* A named color */
-    font: 200px;
-    color: #f0f0f0d6; /* Adjust text color as needed */
-  }
-  
-  /* GitHub link */
-  .github-link {
-    display: inline-block;
-    background-color: #333; /* GitHub dark gray */
-    color: white;
-    padding: 8px 12px;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: bold;
-  }
-  
-  .github-link:hover {
-    background-color: #111; /* Darker gray */
-  }
-  
-  /* Navbar */
-  .navbar {
-    background-color: #5f4545bc;
-    padding: 0 20px;
-  }
-  
-  .navbar-nav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    height: 70px;
-  }
-  
-  .nav-item {
-    margin: 0 20px; /* Increased spacing for better tap targets */
-    color: #a59b91; /* Improved contrast */
-  }
-  
-  .nav-subgroup {
-    margin-left: 20px;
-    list-style-type: none;
-  }
-  
-  .nav-link {
-    text-decoration: none;
-    color: #cfcbcb; /* Darker shade for better readability */
-    font-size: 1.1em;
-    font-weight: normal;
-    border-radius: 5px; /* Rounds the corners of the background */
-    padding: 3px 5px 4px;
-    margin: -3px -5px -4px; /* Negates the added padding to keep layout consistent */
-    display: inline-block;
-    transition: background-color 0.3s ease;
-  }
-  
-  .nav-link.active {
-    color: #ffffff;
-    outline: none; /* Removes the default focus outline */
-    background-color: #e6d1c749; /* Sets a background color for the focus state */
-    border-color: #e6d1c749;
-    border-radius: 5px; /* Rounds the corners of the background */
-    display: inline-block; /* Allows the padding and border-radius to be applied */
-    padding: 3px 5px 4px;
-    margin: -3px -5px -4px; /* Negates the added padding to keep layout consistent */
-    font-weight: bold;
-  }
-  
-  .nav-link:hover {
-    color: #ffffff;
-    outline: none; /* Removes the default focus outline */
-    background-color: #e6d1c749; /* Sets a background color for the focus state */
-    border-radius: 5px; /* Rounds the corners of the background */
-    border-color: #ffffffc1;
-    display: inline-block; /* Allows the padding and border-radius to be applied */
-    padding: 3px 5px 4px;
-    margin: -3px -5px -4px; /* Negates the added padding to keep layout consistent */
-  }
-  
-  .nav-item > .nav-link {
-    cursor: pointer;
-  }
-  
-  /* Home layout */
-  .home-layout {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-  
-  /* Project layout */
-  .projects-layout {
-    display: flex;
-  }
-  
-  .projects-container {
-    padding: 20px;
-  }
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
 
-  /* Pages layout */
-  .pages-layout {
-    display: flex;
-  }
-  
-  .pages-container {
-    padding: 20px;
-  }
+main {
+  flex-grow: 1;
+  padding: 10px; /* Adjust padding as needed */
+  background-color: #2d2e2e; /* A named color */
+  font: 200px;
+  color: #f0f0f0d6; /* Adjust text color as needed */
+}
 
-  /* Grid layout */
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates three columns */
-    gap: 60px 40px; /* Adjust the gap between items as needed */
+/* GitHub link */
+.github-link {
+  display: inline-block;
+  background-color: #333; /* GitHub dark gray */
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.github-link:hover {
+  background-color: #111; /* Darker gray */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #5f4545bc;
+  padding: 0 20px;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
+
+.nav-item {
+  margin: 0 20px; /* Increased spacing for better tap targets */
+  color: #a59b91; /* Improved contrast */
+}
+
+.nav-subgroup {
+  margin-left: 20px;
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #cfcbcb; /* Darker shade for better readability */
+  font-size: 1.1em;
+  font-weight: normal;
+  border-radius: 5px; /* Rounds the corners of the background */
+  padding: 3px 5px 4px;
+  margin: -3px -5px -4px; /* Negates the added padding to keep layout consistent */
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link.active {
+  color: #ffffff;
+  outline: none; /* Removes the default focus outline */
+  background-color: #e6d1c749; /* Sets a background color for the focus state */
+  border-color: #e6d1c749;
+  border-radius: 5px; /* Rounds the corners of the background */
+  display: inline-block; /* Allows the padding and border-radius to be applied */
+  padding: 3px 5px 4px;
+  margin: -3px -5px -4px; /* Negates the added padding to keep layout consistent */
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  outline: none; /* Removes the default focus outline */
+  background-color: #e6d1c749; /* Sets a background color for the focus state */
+  border-radius: 5px; /* Rounds the corners of the background */
+  border-color: #ffffffc1;
+  display: inline-block; /* Allows the padding and border-radius to be applied */
+  padding: 3px 5px 4px;
+  margin: -3px -5px -4px; /* Negates the added padding to keep layout consistent */
+}
+
+.nav-item > .nav-link {
+  cursor: pointer;
+}
+
+/* Home layout */
+.home-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Project layout */
+.projects-layout {
+  display: flex;
+}
+
+.projects-container {
+  padding: 20px;
+}
+
+/* Pages layout */
+.pages-layout {
+  display: flex;
+}
+
+.pages-container {
+  padding: 20px;
+}
+
+/* Grid layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates three columns */
+  gap: 60px 40px; /* Adjust the gap between items as needed */
+}
+
+.square {
+  background-color: #ad5d0d; /* Example background color */
+  cursor: pointer;
+  width: 170px;
+  height: 170px; /* Adjust height as needed */
+}
+
+.square-text {
+  text-align: left;
+  color: white; /* Text color */
+  margin-top: 10px; /* Adjust the space between the square and the text */
+  font-size: 14px;
+}
+
+/* topics layout */
+.topic-container {
+  background-color: #5a5555;
+  display: flex; /* Enables flexbox layout */
+  align-items: center; /* Aligns children vertically in the center */
+  justify-content: space-between; /* Distributes space between children */
+  padding: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  position: relative; /* Needed for positioning the pseudo-element or image */
+}
+
+.topic-container:hover {
+  background-color: #ac8585;
+  font-weight: bold;
+  transform: scale(1.02);
+}
+
+.topic-container::after {
+  content: "";
+  background-image: url("water.jpg"); /* Replace with your image path */
+  background-size: cover; /* Covers the area of the pseudo-element */
+  background-position: center; /* Centers the background image */
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 33.33%; /* Takes up the right third of the container */
+}
+
+.topic-title {
+  margin: 0;
+  color: #ffffff;
+  text-decoration: none;
+  /* font-weight: normal; */
+}
+
+.topic-text-content {
+  flex-grow: 1; /* Allows the text content to fill the available space */
+  padding-right: 20px; /* Adds spacing between the text and the image */
+  font-weight: normal;
+}
+
+/* dropdown menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  padding: 3px 5px 4px;
+  margin: 4px -5px -4px; /* Negates the added padding to keep layout consistent */
+  border-radius: 5px; /* Rounds the corners of the background */
+  list-style-type: none; /* Removes bullets */
+  z-index: 1000; /* Ensures the dropdown is above other content */
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-link {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: #333;
+}
+
+.dropdown-link:hover {
+  background-color: #ddd;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* This line is for vertical centering if needed */
+  img {
+    margin: 0 auto; /* Centers the image horizontally */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 90%; /* Responsive */
   }
-  
-  .square {
-    background-color: #ad5d0d; /* Example background color */
-    cursor: pointer;
-    width: 170px;
-    height: 170px; /* Adjust height as needed */
+}
+
+figure {
+  display: block; /* Ensures the figure is treated as a block-level element */
+  text-align: center; /* Optional: Centers the image and caption */
+  width: fit-content; /* Shrinks the figure width to fit its contents, centered if body text-align is center */
+  margin: auto; /* Centers the figure horizontally in its container */
+  justify-content: center;
+  align-items: center; /* This line is for vertical centering if needed */
+  img {
+    margin: 0 auto; /* Centers the image horizontally */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 90%; /* Responsive */
   }
-  
-  .square-text {
-    text-align: left;
-    color: white; /* Text color */
-    margin-top: 10px; /* Adjust the space between the square and the text */
-    font-size: 14px;
-  }
-  
-  /* topics layout */
-  .topic-container {
-    background-color: #5a5555;
-    display: flex; /* Enables flexbox layout */
-    align-items: center; /* Aligns children vertically in the center */
-    justify-content: space-between; /* Distributes space between children */
-    padding: 10px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-    position: relative; /* Needed for positioning the pseudo-element or image */
-  }
-  
-  .topic-container:hover {
-    background-color: #ac8585;
-    font-weight: bold;
-    transform: scale(1.02);
-  }
-  
-  .topic-container::after {
-    content: "";
-    background-image: url("water.jpg"); /* Replace with your image path */
-    background-size: cover; /* Covers the area of the pseudo-element */
-    background-position: center; /* Centers the background image */
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 33.33%; /* Takes up the right third of the container */
-  }
-  
-  .topic-title {
-    margin: 0;
-    color: #ffffff;
-    text-decoration: none;
-    /* font-weight: normal; */
-  }
-  
-  .topic-text-content {
-    flex-grow: 1; /* Allows the text content to fill the available space */
-    padding-right: 20px; /* Adds spacing between the text and the image */
-    font-weight: normal;
-  }
-  
-  /* dropdown menu */
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    font-size: 14px;
-    padding: 3px 5px 4px;
-    margin: 4px -5px -4px; /* Negates the added padding to keep layout consistent */
-    border-radius: 5px; /* Rounds the corners of the background */
-    list-style-type: none; /* Removes bullets */
-    z-index: 1000; /* Ensures the dropdown is above other content */
-  }
-  
-  .nav-item:hover .dropdown-menu {
-    display: block;
-  }
-  
-  .dropdown-link {
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    color: #333;
-  }
-  
-  .dropdown-link:hover {
-    background-color: #ddd;
-  }
-  
+}
+
+figcaption {
+  font-style: italic; /* Italicizes the caption */
+  text-align: center; /* Optional: Centers the image and caption */
+  padding: auto;
+}

@@ -5,7 +5,6 @@ import RepoLink from "../components/GitHubButton";
 
 import "../styles/style.css";
 
-
 const ProjectPage = ({ project_data }) => {
   let navigate = useNavigate();
 
@@ -32,7 +31,6 @@ const ProjectPage = ({ project_data }) => {
             <div>
               <RepoLink 
                 link={topic.url} 
-                onClick={() => handleClick(topic.url)}
               />
             </div>
           </div>

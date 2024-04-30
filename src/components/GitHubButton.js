@@ -2,15 +2,19 @@
 import React from 'react';     
 import "../styles/style.css"; 
 
+const RepoLink = ({ link }) => {
 
-const RepoLink = ({ link, onClick}) => {
+    const handleClick = (url) => {
+        window.open(url);
+    };
+
     return (
         <a 
-            href={link}
+            href={ link }
             target="_blank"
             rel="noopener noreferrer"
             className="github-link"            
-            onClick={onClick}
+            onClick={ () => handleClick(link) } 
         >
             View on GitHub
         </a>
