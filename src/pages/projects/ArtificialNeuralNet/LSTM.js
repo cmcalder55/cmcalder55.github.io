@@ -6,11 +6,9 @@ const LSTM = () => {
     return (<div>
         <h1>Long Short-Term Memory Network</h1>
         {/* Link to GitHub repository */}
-        <RepoLink 
-        link={ links.lstm.url } 
-        />
+        <RepoLink link={links.lstm.url} />
         <p>Placeholder</p>
-  </div>)
+    </div>)
 }
 
 export default LSTM;

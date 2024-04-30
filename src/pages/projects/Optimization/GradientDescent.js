@@ -1,5 +1,4 @@
 
-import handleClick from "../../ProjectPage";
 import links from "../../../components/linkMetadata";
 import RepoLink from "../../../components/GitHubButton";
 
@@ -8,10 +7,7 @@ const GradientDescent = () => {
       <div>
         <h1>Gradient Descent</h1>
         {/* Link to GitHub repository */}
-        <RepoLink 
-        link={links.gradDesc.url} 
-        onClick={() => handleClick(links.gradDesc.url)}
-        />
+        <RepoLink link={links.gradDesc.url} />
         <p>Placeholder</p>
       </div>
     )

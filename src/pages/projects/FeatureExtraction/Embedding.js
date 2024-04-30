@@ -1,5 +1,4 @@
 
-import handleClick from "../../ProjectPage";
 import links from "../../../components/linkMetadata";
 import RepoLink from "../../../components/GitHubButton";
 
@@ -9,7 +8,6 @@ const Embedding = () => {
         {/* Link to GitHub repository */}
         <RepoLink 
         link={links.vecEmbed.url} 
-        onClick={() => handleClick(links.vecEmbed.url)}
         />
         <p>Placeholder</p>
   </div>

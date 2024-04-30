@@ -1,5 +1,4 @@
 
-import handleClick from "../../ProjectPage";
 import links from "../../../components/linkMetadata";
 import RepoLink from "../../../components/GitHubButton";
 
@@ -9,7 +8,7 @@ const Hidden = () => {
         {/* Link to GitHub repository */}
         <RepoLink 
         link={links.hidden.url} 
-        onClick={() => handleClick(links.hidden.url)}
+
         />
         <p>Placeholder</p>
   </div>

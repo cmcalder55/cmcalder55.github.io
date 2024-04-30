@@ -1,5 +1,4 @@
 
-import handleClick from "../../ProjectPage";
 import links from "../../../components/linkMetadata";
 import RepoLink from "../../../components/GitHubButton";
 
@@ -8,10 +7,7 @@ const Factorization = () => {
       <div>
         <h1>Matrix Factorization</h1>
         {/* Link to GitHub repository */}
-        <RepoLink 
-        link={links.matFac.url} 
-        onClick={() => handleClick(links.matFac.url)}
-        />
+        <RepoLink link={links.matFac.url} />
         <p>Placeholder</p>
       </div>
     )
