@@ -1,43 +1,50 @@
 
-import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 import RepoLink from "../components/GitHubButton";
 
 import "../styles/style.css";
 
 const ProjectPage = ({ project_data }) => {
-  let navigate = useNavigate();
 
-  const handleClick = (url) => {
-    navigate(url);
-  };
+    const location = useLocation(); // Hook to get location object
 
-  return (
-    <div className="main">
-      <h1>{project_data.name}</h1>
-      {project_data.topics.map((topic, index) => (
-        <div
-          key={index}
-          className="topic-container"
-          onClick={() => handleClick(topic.pagelink)}
-        >
-          <div className="topic-text-content">
-            <h2>
-              <a href={topic.pagelink} className="topic-title">
-                {topic.title}
-              </a>
-            </h2>
-            <p>{topic.description}</p>
-            <div>
-              <RepoLink 
-                link={topic.url} 
-              />
-            </div>
-          </div>
+    const handleClick = (link) => {
+        // Append the provided link path to the current pathname
+        const fullPath = `${window.location.origin}${location.pathname}/${link}`;
+        window.open(fullPath, '_blank'); // Open new window with full path
+    };
+
+    return (
+        <div className="main">
+            <h1>{project_data.name}</h1>
+            {project_data.topics.map((topic, index) => (
+                <div
+                    key={index}
+                    className="topic-container"
+                >
+                    <div className="topic-text-content">
+                        <h2>
+                            <a href={topic.pagelink} className="topic-title">
+                                {topic.title}
+                            </a>
+                        </h2>
+                        <p>{topic.description}</p>
+                        <div>
+                            <RepoLink link={topic.url} />
+                            <button
+                                className="learn-more-button"
+                                href={topic.pagelink}
+                                onClick={ () => { handleClick(topic.pagelink); }}
+                            >
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            ))}
         </div>
-      ))}
-    </div>
-  );
+    );
 };
 
 export default ProjectPage;

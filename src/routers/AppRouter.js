@@ -65,89 +65,89 @@ export default function AppRouter() {
                 <Route path="/" element={<HomeLayout />}>
                     <Route index element={<Home />} />
 
-                {/* About page */}
-                <Route path="about" element={<About />} />
+                    {/* About page */}
+                    <Route path="about" element={<About />} />
 
-                {/* Projects page with subroutes */}
-                <Route path="projects" element={<ProjectsLayout />}>
-                    <Route index element={<Projects />} />
+                    {/* Projects page with subroutes */}
+                    <Route path="projects" element={<ProjectsLayout />}>
+                        <Route index element={<Projects />} />
 
-                    {/* Artificial Neural Network pages */}
-                    <Route path="ann" >
-                        <Route index element={<ANN />} />
-                        <Route path="cnn" element={<CNN />} />
-                        <Route path="lstm" element={<LSTM />} />
-                        <Route path="rnn" element={<RNN />} />
+                        {/* Artificial Neural Network pages */}
+                        <Route path="ann" >
+                            <Route index element={<ANN />} />
+                            <Route path="cnn" element={<CNN />} />
+                            <Route path="lstm" element={<LSTM />} />
+                            <Route path="rnn" element={<RNN />} />
+                        </Route>
+
+                        {/* Automation and Control Systems pages */}
+                        <Route path="automation-and-controls" >
+                            <Route index element={<AutomationAndControls />} />
+                            <Route path="ua-robotics" element={<UaRobotics />} />
+                            <Route path="pi-controller" element={<PiController />} />
+                            <Route path="path-planning" element={<PathFindingSim />} />
+                        </Route>
+
+                        {/* Classification pages */}
+                        <Route path="classification" >
+                            <Route index element={<Classification />} />
+                            <Route path="music-recommender" element={<MusicRec />} />
+                            <Route path="gmm" element={<GMM />} />
+                            <Route path="text-clustering" element={<TextClustering />} />
+                            <Route path="naive-bayes" element={<NB />} />
+                            <Route path="linear-svm" element={<SVM />} />
+                            <Route path="decision-tree" element={<DecisionTree />} />
+                        </Route>
+
+                        {/* Database / App Development pages */}
+                        <Route path="db-app-dev" >
+                            <Route index element={<DbAppDev />} />
+                            <Route path="flower-generator" element={<FlowerGen />} />
+                            <Route path="navalis-oracle" element={<Oracle />} />
+                        </Route>
+
+                        {/* Feature Extraction pages */}
+                        <Route path="feature-extraction" >
+                            <Route index element={<FeatureExtraction />} />
+                            <Route path="autoencoder" element={<Autoencoder />} />
+                            <Route path="hidden-layer" element={<Hidden />} />
+                            <Route path="semantic-net" element={<Semantic />} />
+                            <Route path="embedding" element={<Embedding />} />
+                        </Route>
+
+                        {/* Optimization pages */}
+                        <Route path="optimization" >
+                            <Route index element={<Optimization />} />
+                            <Route path="gen-alg" element={<GenAlg />} />
+                            <Route path="lin-reg" element={<LinAlg />} />
+                            <Route path="log-barrier" element={<LogBarrier />} />
+                            <Route path="gradient-descent" element={<GradientDescent />} />
+                            <Route path="matrix-fac" element={<Factorization />} />
+                            <Route path="bayes-est" element={<BayesEst />} />
+                            <Route path="stoc-backprop" element={<Backprop />} />
+                        </Route>
+
+                        {/* Pre-Processing pages */}
+                        <Route path="pre-processing" >
+                            <Route index element={<PreProcessing />} />
+                            <Route path="web-scraping" element={<WebScraping />} />
+                            <Route path="vectorization" element={<Vectorization />} />
+                        </Route>
+
                     </Route>
 
-                    {/* Automation and Control Systems pages */}
-                    <Route path="automation-and-controls" >
-                        <Route index element={<AutomationAndControls />} />
-                        <Route path="ua-robotics" element={<UaRobotics />} />
-                        <Route path="pi-controller" element={<PiController />} />
-                        <Route path="path-planning" element={<PathFindingSim />} />
+                    {/* interests pages */}
+                    {/* <Route path="interests" element={<Interests />} /> */}
+                    <Route path="interests" >
+                        <Route index element={<Interests />} />
+                        <Route path="bookshelf" element={<Bookshelf />} />
+                        <Route path="art" element={<Art />} />
+                        <Route path="games" element={<Games />} />
+                        <Route path="technical" element={<Technical />} />
                     </Route>
 
-                    {/* Classification pages */}
-                    <Route path="classification" >
-                        <Route index element={<Classification />} />
-                        <Route path="music-recommender" element={<MusicRec />} />
-                        <Route path="gmm" element={<GMM />} />
-                        <Route path="text-clustering" element={<TextClustering />} />
-                        <Route path="naive-bayes" element={<NB />} />
-                        <Route path="linear-svm" element={<SVM />} />
-                        <Route path="decision-tree" element={<DecisionTree />} />
-                    </Route>
-
-                    {/* Database / App Development pages */}
-                    <Route path="db-app-dev" >
-                        <Route index element={<DbAppDev />} />
-                        <Route path="flower-generator" element={<FlowerGen />} />
-                        <Route path="navalis-oracle" element={<Oracle />} />
-                    </Route>
-
-                    {/* Feature Extraction pages */}
-                    <Route path="feature-extraction" >
-                        <Route index element={<FeatureExtraction />} />
-                        <Route path="autoencoder" element={<Autoencoder />} />
-                        <Route path="hidden-layer" element={<Hidden />} />
-                        <Route path="semantic-net" element={<Semantic />} />
-                        <Route path="embedding" element={<Embedding />} />
-                    </Route>
-
-                    {/* Optimization pages */}
-                    <Route path="optimization" >
-                        <Route index element={<Optimization />} />
-                        <Route path="gen-alg" element={<GenAlg />} />
-                        <Route path="lin-reg" element={<LinAlg />} />
-                        <Route path="log-barrier" element={<LogBarrier />} />
-                        <Route path="gradient-descent" element={<GradientDescent />} />
-                        <Route path="matrix-fac" element={<Factorization />} />
-                        <Route path="bayes-est" element={<BayesEst />} />
-                        <Route path="stoc-backprop" element={<Backprop />} />
-                    </Route>
-
-                    {/* Pre-Processing pages */}
-                    <Route path="pre-processing" >
-                        <Route index element={<PreProcessing />} />
-                        <Route path="web-scraping" element={<WebScraping />} />
-                        <Route path="vectorization" element={<Vectorization />} />
-                    </Route>
-
-                </Route>
-
-                {/* interests pages */}
-                {/* <Route path="interests" element={<Interests />} /> */}
-                <Route path="interests" >
-                    <Route index element={<Interests />} />
-                    <Route path="bookshelf" element={<Bookshelf />} />
-                    <Route path="art" element={<Art />} />
-                    <Route path="games" element={<Games />} />
-                    <Route path="technical" element={<Technical />} />
-                </Route>
-
-                {/* Catch any undefined URLs (404 error) */}
-                <Route path="*" element={<NoPage />} />
+                    {/* Catch any undefined URLs (404 error) */}
+                    <Route path="*" element={<NoPage />} />
                 </Route>
             </Routes>
         </Router>

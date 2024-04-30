@@ -103,6 +103,7 @@ main {
 /* Project layout */
 .projects-layout {
   display: flex;
+  padding: 20px;
 }
 
 .projects-container {
@@ -142,11 +143,13 @@ main {
 /* topics layout */
 .topic-container {
   background-color: #5a5555;
-  display: flex; /* Enables flexbox layout */
+  left: 10px;
+  display: block; /* Enables flexbox layout */
   align-items: center; /* Aligns children vertically in the center */
   justify-content: space-between; /* Distributes space between children */
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 40px;
+  margin-bottom: 40px;
+  max-width: 80%;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
   position: relative; /* Needed for positioning the pseudo-element or image */
@@ -242,4 +245,23 @@ figcaption {
   font-style: italic; /* Italicizes the caption */
   text-align: center; /* Optional: Centers the image and caption */
   padding: auto;
+}
+
+.learn-more-button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  font-size: 16px; /* Set the font size */
+  padding: 10px 20px; /* Top/bottom and left/right padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-decoration: none; /* No underline */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effects */
+  margin-left: 10px; /* Adds margin to the right of the button */
+}
+
+.learn-more-button:hover, .learn-more-button:focus {
+  background-color: #45a049; /* Slightly darker green background on hover/focus */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Add shadow for 3D effect on hover */
+  outline: none; /* Remove outline on focus for aesthetics */
 }
