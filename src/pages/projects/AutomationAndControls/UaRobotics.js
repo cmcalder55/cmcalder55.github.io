@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import links from "../../../components/linkMetadata";
 import RepoLink from "../../../components/GitHubButton";
 
-
 export const UaRobotics = () => {
     return (
         <div>
@@ -24,7 +23,7 @@ export const UaRobotics = () => {
             </p>
 
             <figure>
-                <img src="https://github.com/cmcalder55/automation-and-controls/blob/main/underactuated-robotics/graphics/davinci.jpg" alt="wings" />
+                <img src="https://github.com/cmcalder55/automation-and-controls/blob/main/underactuated-robotics/graphics/davinci.jpg?raw=true" alt="wings" />
             </figure>
             <figcaption>Da Vinci's self-adaptive flapping wings.</figcaption>
 
@@ -43,11 +42,11 @@ export const UaRobotics = () => {
             </p>
 
             <figure>
-                <img src="https://github.com/cmcalder55/automation-and-controls/underactuated-robotics/blob/main/graphics/SWmodel.png?raw=true" alt="sw model" />
+                <img src="https://github.com/cmcalder55/automation-and-controls/blob/main/underactuated-robotics/graphics/SWmodel.png?raw=true" alt="sw model" />
             </figure>
             <figcaption>SolidWorks 3D model.</figcaption>
             <figure>
-                <img src="https://github.com/cmcalder55/automation-and-controls/underactuated-robotics/blob/main/graphics/physPrototype.png?raw=true" alt="prototype" />
+                <img src="https://github.com/cmcalder55/automation-and-controls/blob/main/underactuated-robotics/graphics/physPrototype.png?raw=true" alt="prototype" />
             </figure>
             <figcaption>Physical prototyping.</figcaption>
 
@@ -60,7 +59,7 @@ export const UaRobotics = () => {
             </p>
 
             <figure>
-                <img src="https://github.com/cmcalder55/automation-and-controls/underactuated-robotics/blob/main/graphics/overhead.png?raw=true" alt="overhead" />
+                <img src="https://github.com/cmcalder55/automation-and-controls/blob/main/underactuated-robotics/graphics/overhead.png?raw=true" alt="overhead" />
             </figure>
             <figcaption>Target gripping overhead view.</figcaption>
             <p>
@@ -71,7 +70,7 @@ export const UaRobotics = () => {
                 <Link to="https://youtu.be/HWir0G_nYKU/">[here]</Link>.
             </p>
             <figure>
-                <img src="https://github.com/cmcalder55/automation-and-controls/underactuated-robotics/blob/main/graphics/front.png?raw=true" alt="lift can"/>
+                <img src="https://github.com/cmcalder55/automation-and-controls/blob/main/underactuated-robotics/graphics/front.png?raw=true" alt="lift can"/>
             </figure>
             <figcaption>Target lifting front view.</figcaption>
 
