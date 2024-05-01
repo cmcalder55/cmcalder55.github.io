@@ -1,6 +1,6 @@
 // pages/projects/AutomationAndControls/AutomationAndControls.js
 
-import ProjectPage from "../../ProjectPage";
+import ProjectPage from "../ProjectPage";
 import links from "../../../components/linkMetadata";
 
 const AutomationAndControls = () => {

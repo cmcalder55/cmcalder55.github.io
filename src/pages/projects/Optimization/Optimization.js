@@ -1,6 +1,6 @@
 // Filename - pages/projects/Optimization/Optimization.js
 
-import ProjectPage from "../../ProjectPage";
+import ProjectPage from "../ProjectPage";
 import links from "../../../components/linkMetadata";
 
 const Optimization = () => {

@@ -1,6 +1,6 @@
 // Filename - pages/projects/DbAppDevelopment/DbAppDevelopment.js
 
-import ProjectPage from "../../ProjectPage";
+import ProjectPage from "../ProjectPage";
 import links from "../../../components/linkMetadata";
 
 const DbAppDevelopment = () => {

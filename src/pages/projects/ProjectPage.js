@@ -1,18 +1,21 @@
 
-import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-import RepoLink from "../components/GitHubButton";
-
-import "../styles/style.css";
+import RepoLink from "../../components/GitHubButton";
+import "../../styles/style.css";
 
 const ProjectPage = ({ project_data }) => {
 
-    const location = useLocation(); // Hook to get location object
+    // const location = useLocation(); // Hook to get location object
+    // const handleClick = (link) => {
+    //     // Append the provided link path to the current pathname
+    //     const fullPath = `${window.location.origin}${location.pathname}/${link}`;
+    //     window.navigator(fullPath, '_blank'); // Open new window with full path
+    // };
 
+    let navigator = useNavigate();
     const handleClick = (link) => {
-        // Append the provided link path to the current pathname
-        const fullPath = `${window.location.origin}${location.pathname}/${link}`;
-        window.open(fullPath, '_blank'); // Open new window with full path
+        navigator(link);
     };
 
     return (

@@ -248,7 +248,7 @@ figcaption {
 }
 
 .learn-more-button {
-  background-color: #4CAF50; /* Green background */
+  background-color: #3b94dd; /* Green background */
   color: white; /* White text */
   font-size: 16px; /* Set the font size */
   padding: 10px 20px; /* Top/bottom and left/right padding */
@@ -261,7 +261,7 @@ figcaption {
 }
 
 .learn-more-button:hover, .learn-more-button:focus {
-  background-color: #45a049; /* Slightly darker green background on hover/focus */
+  background-color: #2c86cf; /* Slightly darker green background on hover/focus */
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Add shadow for 3D effect on hover */
   outline: none; /* Remove outline on focus for aesthetics */
 }

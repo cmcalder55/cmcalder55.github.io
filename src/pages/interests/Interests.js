@@ -1,6 +1,6 @@
 // pages/projects/AutomationAndControls/AutomationAndControls.js
 
-import ProjectPage from "../ProjectPage";
+import ProjectPage from "../projects/ProjectPage";
 import links from "../../components/linkMetadata";
 
 const Interests = () => {
