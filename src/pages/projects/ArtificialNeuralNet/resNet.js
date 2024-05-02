@@ -2,7 +2,7 @@
 import links from "../../../components/linkMetadata";
 import RepoLink from "../../../components/GitHubButton";
 
-const RNN = () => {
+const resNet = () => {
 
 
     return (
@@ -10,9 +10,16 @@ const RNN = () => {
             <h1>Residual Neural Network</h1>
             {/* Link to GitHub repository */}
             <RepoLink link={links.rnn.url} />
-            <p>Placeholder</p>
+            
+            <h2>Background</h2>
+            <p></p>
+
+            <h2>Examples</h2>
+            <h3>Predict CIFAR-10 Data</h3>
+            <p></p>
+
         </div>
     );
 }
 
-export default RNN;
+export default resNet;

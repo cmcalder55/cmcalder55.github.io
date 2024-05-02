@@ -5,10 +5,8 @@ const GMM = () => {
     return (
         <div>
             <h1>Gaussian Mixture Model</h1>
-            {/* Link to GitHub repository */}
-            <RepoLink 
-            link={links.gmModel.url} 
-            />
+            <RepoLink link={links.gmModel.url} />
+        
             <p>Placeholder</p>
         </div>
     );  

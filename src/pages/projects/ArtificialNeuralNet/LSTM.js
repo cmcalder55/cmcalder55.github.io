@@ -5,9 +5,19 @@ import RepoLink from "../../../components/GitHubButton";
 const LSTM = () => {
     return (<div>
         <h1>Long Short-Term Memory Network</h1>
-        {/* Link to GitHub repository */}
+
         <RepoLink link={links.lstm.url} />
-        <p>Placeholder</p>
+
+        <h2>Background: Recurrent Neural Networks</h2>
+        <p></p>
+
+        <h2>Memory Gates</h2>
+        <p></p>
+
+        <h2>Examples</h2>
+        <h3>Predicting Airplane Passengers</h3>
+        <p></p>
+        
     </div>)
 }
 

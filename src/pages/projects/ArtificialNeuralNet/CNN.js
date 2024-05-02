@@ -9,9 +9,25 @@ const CNN = () => {
             {/* Link to GitHub repository */}
             <RepoLink link={links.cnn.url} />
 
-            <p>Placeholder</p>
+            <h2>Background</h2>
+            <h3>LeNet-5</h3>
+            <p></p>
 
-        </div>)
+            <h3>AlexNet</h3>
+            <p></p>
+
+            <h2>Modeling with TensorFlow</h2>
+            <p></p>
+
+            <h2>Examples</h2>
+            <h3>Predicting MNIST Handwritten Numbers</h3>
+            <p></p>
+
+            <h3>Predicting CIFAR-10 Images</h3>     
+            <p></p>
+
+        </div>
+    )
 };
 
 export default CNN;
