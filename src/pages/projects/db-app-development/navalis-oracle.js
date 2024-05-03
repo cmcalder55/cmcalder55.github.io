@@ -2,13 +2,23 @@
 import links from "../../../components/linkMetadata";
 import RepoLink from "../../../components/GitHubButton";
 
-export const Oracle = () => {
+const Oracle = () => {
     <div>
         <h1>Navali's Oracle</h1>
-        {/* Link to GitHub repository */}
-        <RepoLink 
-        link={links.PoeOracle.url} 
-        />
-        <p>Placeholder</p>
+        <RepoLink link={links.PoeOracle.url} />
+
+        <h2>Background</h2>
+        <p></p>
+
+        <h2>Sherpa</h2>
+        <p></p>
+
+        <h2>Arborist</h2>
+        <p>
+          [ In Progress ]
+        </p>
+
   </div>
 }
+
+export default Oracle;

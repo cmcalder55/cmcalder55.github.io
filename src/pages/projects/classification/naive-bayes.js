@@ -6,10 +6,8 @@ export const NB = () => {
     return (
         <div>
           <h1>Naive Bayes</h1>
-          {/* Link to GitHub repository */}
-          <RepoLink 
-            link={links.naiveBayes.url} 
-          />
+          <RepoLink link={links.naiveBayes.url} />
+          
           <p>Placeholder</p>
         </div>
       );
