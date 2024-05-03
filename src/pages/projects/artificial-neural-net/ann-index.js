@@ -21,9 +21,9 @@ const ANN = () => {
         },
         {
             title: "Residual Network",
-            pagelink: "rnn",
+            pagelink: "res-net",
             description: "Information about topic 2",
-            url: links.rnn.url
+            url: links.resnet.url
           },
       ],
     };

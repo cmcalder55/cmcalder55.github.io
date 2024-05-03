@@ -6,10 +6,12 @@ const CNN = () => {
     return (
         <div>
             <h1>Convolutional Neural Network</h1>
-            {/* Link to GitHub repository */}
+
             <RepoLink link={links.cnn.url} />
 
             <h2>Background</h2>
+
+            <h2>Common Models</h2>
             <h3>LeNet-5</h3>
             <p></p>
 

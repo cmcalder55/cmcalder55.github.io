@@ -34,7 +34,7 @@ const links = {
     lstm: {
         url: "https://github.com/cmcalder55/ann/tree/main/ltsm"
     },
-    rnn: {
+    resnet: {
         url: "https://github.com/cmcalder55/ann/tree/main/rnn"
     },
     scrape: {
