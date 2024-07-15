@@ -8,27 +8,21 @@ const FeatureExtraction = () => {
     name: "Feature Extraction",
     topics: [
       {
-        title: "Autoencoder",
+        title: "Auto-Encoder",
         pagelink: "autoencoder",
-        description: "Information about topic 1",
+        description: "todo",
         url: links.autoEn.url
-      },
-      {
-        title: "Hidden Layer Network",
-        pagelink: "hidden-layer",
-        description: "Information about topic 2",
-        url: links.hidden.url
       },
       {
         title: "Semantic Network Analysis",
         pagelink: "semantic-net",
-        description: "Information about topic 2",
+        description: "todo",
         url: links.semanticNet.url
       },
       {
-        title: "Vector Embedding",
+        title: "Conditional Class Density",
         pagelink: "embedding",
-        description: "Information about topic 2",
+        description: "todo",
         url: links.vecEmbed.url
       },
     ],

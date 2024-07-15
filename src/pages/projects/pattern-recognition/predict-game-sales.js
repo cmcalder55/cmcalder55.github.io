@@ -1,7 +1,7 @@
 import links from "../../../components/linkMetadata";
 import RepoLink from "../../../components/GitHubButton";
 
-const SVM = () => {
+const PredictGameSales = () => {
   return (
     <div>
       <h1>Linear SVM</h1>
@@ -23,4 +23,4 @@ const SVM = () => {
   );  
 };
 
-export default SVM;
+export default PredictGameSales;

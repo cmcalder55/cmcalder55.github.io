@@ -2,7 +2,7 @@
 import links from "../../../components/linkMetadata";
 import RepoLink from "../../../components/GitHubButton";
 
-export const FlowerGen = () => {
+const FlowerGen = () => {
     <div>
         <h1>Blender3D Flower Generator</h1>
         <RepoLink link={links.flowerGen.url} />
@@ -29,3 +29,5 @@ export const FlowerGen = () => {
         </p>
     </div>
 }
+
+export default FlowerGen;

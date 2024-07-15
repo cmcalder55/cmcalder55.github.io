@@ -2,14 +2,14 @@
 import links from "../../../components/linkMetadata";
 import RepoLink from "../../../components/GitHubButton";
 
-const textProcessing = () => {
+const OneHotEncoder = () => {
     return (
         <div>
-          <h1>Text Pre-Processing</h1>
+          <h1>One-Hot Encoder</h1>
           <RepoLink link={links.scrape.url} />
           <p>Placeholder</p>
         </div>
       );
     };
     
-export default textProcessing;
+export default OneHotEncoder;

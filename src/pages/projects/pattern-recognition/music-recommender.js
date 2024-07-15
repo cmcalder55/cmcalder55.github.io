@@ -1,7 +1,7 @@
 import links from "../../../components/linkMetadata";
 import RepoLink from "../../../components/GitHubButton";
 
-export const MusicRec = () => {
+const MusicRec = () => {
     return (
         <div>
           <h1>Music Reccommender</h1>
@@ -22,4 +22,4 @@ export const MusicRec = () => {
         </div>
       );  
 }
-// export default MusicRec;
+export default MusicRec;

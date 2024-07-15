@@ -19,6 +19,12 @@ const DbAppDevelopment = () => {
           description: "todo",
           url: links.PoeOracle.url
         },
+        {
+          title: "Automated Bottle Storage",
+          pagelink: "auto-bottle-storage",
+          description: "todo",
+          url: links.PoeOracle.url
+        },
       ],
     };
   

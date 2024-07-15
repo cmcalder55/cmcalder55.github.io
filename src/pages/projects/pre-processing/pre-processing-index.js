@@ -4,25 +4,31 @@ import ProjectPage from "../ProjectPage";
 import links from "../../../components/linkMetadata";
 
 const PreProcessing = () => {
-  const project_data = {
-    name: "Pre-Processing",
-    topics: [
-      {
-        title: "Web Scraping",
-        pagelink: "web-scraping",
-        description: "Information about topic 1",
-        url: links.scrape.url
-      },
-      {
-        title: "Vector Representation",
-        pagelink: "vectorization",
-        description: "Information about topic 2",
-        url: links.toVector.url
-      },
-    ],
-  };
+    const project_data = {
+        name: "Pre-Processing",
+        topics: [
+            {
+                title: "One-Hot Encoder",
+                pagelink: "one-hot-encoder",
+                description: "todo",
+                url: links.scrape.url
+            },
+            {
+                title: "Word Vectorization",
+                pagelink: "vectorization",
+                description: "todo",
+                url: links.toVector.url
+            },
+            {
+                title: "Text Processing",
+                pagelink: "text-processing",
+                description: "todo",
+                url: links.textCluster.url
+            },
+        ],
+    };
 
-  return ProjectPage({ project_data });
+    return ProjectPage({ project_data });
 };
 
 export default PreProcessing;

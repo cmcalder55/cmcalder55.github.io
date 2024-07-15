@@ -10,19 +10,19 @@ const ANN = () => {
         {
           title: "Convolutional Neural Network",
           pagelink: "cnn",
-          description: "Blender3D Python script to generate cherry blossoms.",
+          description: "todo",
           url: links.cnn.url
         },
         {
           title: "Long Short-Term Memory Network",
           pagelink: "lstm",
-          description: "Information about topic 2",
+          description: "todo",
           url: links.lstm.url
         },
         {
-            title: "Residual Network",
-            pagelink: "res-net",
-            description: "Information about topic 2",
+            title: "Residual Neural Network",
+            pagelink: "resnet",
+            description: "todo",
             url: links.resnet.url
           },
       ],

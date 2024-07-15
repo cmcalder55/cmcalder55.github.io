@@ -34,8 +34,8 @@ const HomeLayout = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/projects/classification" className="dropdown-link">
-                    Classification
+                  <NavLink to="/projects/pattern-recognition" className="dropdown-link">
+                    Pattern Recognition
                   </NavLink>
                 </li>
                 <li>

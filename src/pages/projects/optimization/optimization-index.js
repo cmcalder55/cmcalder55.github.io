@@ -8,27 +8,39 @@ const Optimization = () => {
     name: "Optimization",
     topics: [
       {
-        title: "Urban Planning with Genetic Algorithms",
+        title: "Genetic Algorithms",
         pagelink: "gen-alg",
         description: "gen_alg",
         url: links.genAlg.url
       },
       {
+        title: "Computer Vision Assisted LaPlacian Regression",
+        pagelink: "computer-vis",
+        description: "todo",
+        url: links.genAlg.url
+      },
+      {
         title: "Linear Regression Models",
         pagelink: "lin-reg",
-        description: "Information about topic 2",
+        description: "todo",
+        url: links.linReg.url
+      },
+      {
+        title: "Logistic Regression Models",
+        pagelink: "log-reg",
+        description: "todo",
         url: links.linReg.url
       },
       {
         title: "Log-Barrier Optimization",
         pagelink: "log-barrier",
-        description: "Information about topic",
+        description: "todo",
         url: links.logBar.url
       },
       {
         title: "Gradient Descent Methods",
         pagelink: "gradient-descent",
-        description: "Information about topic 2",
+        description: "todo",
         url: links.gradDesc.url
       },
       {
