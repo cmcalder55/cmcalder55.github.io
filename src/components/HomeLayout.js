@@ -75,18 +75,8 @@ const HomeLayout = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/interests/art" className="dropdown-link">
-                    Art
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/interests/games" className="dropdown-link">
-                    Games
-                  </NavLink>
-                </li>
-                <li>
                   <NavLink to="/interests/technical" className="dropdown-link">
-                    Technical Papers
+                    Technical Reading
                   </NavLink>
                 </li>
               </ul>
