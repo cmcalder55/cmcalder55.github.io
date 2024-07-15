@@ -29,7 +29,7 @@ const AutomationAndControls = () => {
                 title: "Forward/Inverse Kinematics",
                 pagelink: "fi-kinematics",
                 description: "todo",
-                url: links.uaHand.url
+                url: links.fiKin.url
             },
         ],
     };

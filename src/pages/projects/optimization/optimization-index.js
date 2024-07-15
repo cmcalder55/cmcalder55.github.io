@@ -15,9 +15,9 @@ const Optimization = () => {
       },
       {
         title: "Computer Vision Assisted LaPlacian Regression",
-        pagelink: "computer-vis",
+        pagelink: "cv-laplacian",
         description: "todo",
-        url: links.genAlg.url
+        url: links.compVis.url
       },
       {
         title: "Linear Regression Models",
@@ -29,7 +29,7 @@ const Optimization = () => {
         title: "Logistic Regression Models",
         pagelink: "log-reg",
         description: "todo",
-        url: links.linReg.url
+        url: links.logReg.url
       },
       {
         title: "Log-Barrier Optimization",

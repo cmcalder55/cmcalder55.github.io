@@ -23,7 +23,7 @@ const PatternRecognition = () => {
                 title: "Predict Global Game Sales",
                 pagelink: "predict-sales",
                 description: "todo",
-                url: links.textCluster.url
+                url: links.predSales.url
             },
             {
                 title: "Text Classification",
@@ -35,7 +35,7 @@ const PatternRecognition = () => {
                 title: "Text Clustering",
                 pagelink: "text-clustering",
                 description: "todo",
-                url: links.textCluster.url
+                url: links.textClf.url
             },
         ],
     };

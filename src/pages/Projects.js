@@ -13,7 +13,7 @@ const Projects = () => {
         { url: "/projects/db-app-dev", text: "DB / App Development" },
         { url: "/projects/feature-extraction", text: "Feature Extraction" },
         { url: "/projects/optimization", text: "Optimization" },
-        { url: "/projects/pre-processing", text: "Data Pre-Processing" },
+        { url: "/projects/pre-processing", text: "Pre-Processing" },
     ];
 
     // go to the page url on clicking the square

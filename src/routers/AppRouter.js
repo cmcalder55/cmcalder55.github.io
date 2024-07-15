@@ -42,7 +42,7 @@ import AutoStorage from "../pages/projects/db-app-development/auto-storage";
 
 import FeatureExtraction from "../pages/projects/feature-extraction/feature-extraction-index";
 import Autoencoder from "../pages/projects/feature-extraction/autoencoder";
-import Hidden from "../pages/projects/feature-extraction/hidden-layers"
+import ProbDensity from "../pages/projects/feature-extraction/prob-density"
 import Semantic from "../pages/projects/feature-extraction/semantic-net"
 
 import Optimization from "../pages/projects/optimization/optimization-index";
@@ -53,6 +53,9 @@ import GenAlg from "../pages/projects/optimization/genetic-algorithm";
 import GradientDescent from "../pages/projects/optimization/gradient-descent";
 import LinAlg from "../pages/projects/optimization/linear-regression";
 import LogBarrier from "../pages/projects/optimization/log-barrier";
+import LogReg from "../pages/projects/optimization/logistic-regression";
+import cvLaplacian from "../pages/projects/optimization/laplacian";
+import ProbDensity from "../pages/projects/feature-extraction/prob-density";
 
 import PreProcessing from "../pages/projects/pre-processing/pre-processing-index";
 import textProcessing from "../pages/projects/pre-processing/text-processing";
@@ -106,26 +109,28 @@ export default function AppRouter() {
                             <Route index element={<DbAppDev />} />
                                 <Route path="flower-generator" element={<FlowerGen />} />
                                 <Route path="navalis-oracle" element={<Oracle />} />
-                                <Route path="auto-bottle-storage" element={<AutoStorage />} />
+                                <Route path="auto-storage" element={<AutoStorage />} />
                         </Route>
 
                         {/* Feature Extraction pages */}
                         <Route path="feature-extraction" >
                             <Route index element={<FeatureExtraction />} />
                                 <Route path="autoencoder" element={<Autoencoder />} />
-                                <Route path="hidden-layer" element={<Hidden />} />
+                                <Route path="prob-density" element={<ProbDensity />} />
                                 <Route path="semantic-net" element={<Semantic />} />
                         </Route>
 
                         {/* Optimization pages */}
                         <Route path="optimization" >
                             <Route index element={<Optimization />} />
+                                <Route path="bayes-est" element={<BayesEst />} />
+                                <Route path="cv-laplacian" element={<cvLaplacian />} />
                                 <Route path="gen-alg" element={<GenAlg />} />
+                                <Route path="gradient-descent" element={<GradientDescent />} />                                
                                 <Route path="lin-reg" element={<LinAlg />} />
                                 <Route path="log-barrier" element={<LogBarrier />} />
-                                <Route path="gradient-descent" element={<GradientDescent />} />
+                                <Route path="log-reg" element={<LogReg />} />
                                 <Route path="matrix-fac" element={<Factorization />} />
-                                <Route path="bayes-est" element={<BayesEst />} />
                                 <Route path="stoc-backprop" element={<Backprop />} />
                         </Route>
 
@@ -140,12 +145,9 @@ export default function AppRouter() {
                     </Route>
 
                     {/* interests pages */}
-                    {/* <Route path="interests" element={<Interests />} /> */}
                     <Route path="interests" >
                         <Route index element={<Interests />} />
                             <Route path="bookshelf" element={<Bookshelf />} />
-                            <Route path="art" element={<Art />} />
-                            <Route path="games" element={<Games />} />
                             <Route path="technical" element={<Technical />} />
                     </Route>
 

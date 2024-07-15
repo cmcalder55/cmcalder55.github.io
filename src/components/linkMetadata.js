@@ -9,7 +9,7 @@ const links = {
         url: "https://github.com/cmcalder55/ann/tree/main/ltsm"
     },
     resnet: {
-        url: "https://github.com/cmcalder55/ann/tree/main/rnn"
+        url: "https://github.com/cmcalder55/ann/tree/main/resnet"
     },   
     // automation and ctrls 
     pathPlanning: {
@@ -26,80 +26,82 @@ const links = {
     },
     // db - app dev
     flowerGen: {
-        url: "https://github.com/cmcalder55/flower-generator"
+        url: "https://github.com/cmcalder55/db-app-dev/tree/main/flower-generator"
     },
     PoeOracle: {
-        url: "https://github.com/cmcalder55/navalis-oracle"
+        url: "https://github.com/cmcalder55/db-app-dev/tree/main/navalis-oracle"
     },
     autoStore: {
         url: "https://github.com/cmcalder55/db-app-dev/tree/main/automated-bottle-storage"
     },
     // feature extraction
-
-    // optimization
-
-    // pattern recognition
-
-    // pre-processing
-    
-    musicRec: {
-        url: "https://github.com/cmcalder55/classification/tree/main/music-recommender"
-    },
-    gmModel: {
-        url: "https://github.com/cmcalder55/classification/blob/main/gmm_density.ipynb"
-    },
-    textCluster: {
-        url: "https://github.com/cmcalder55/classification/blob/main/text_clustering.ipynb"
-    },
-    naiveBayes: {
-        url: "https://github.com/cmcalder55/classification/blob/main/naive-bayes.ipynb"
-    },
-    linearSvm: {
-        url: "https://github.com/cmcalder55/classification/blob/main/linear_svm.ipynb"
-    },
-    dtClass: {
-        url: "https://github.com/cmcalder55/classification/blob/main/decision_tree_classifier.ipynb"
-    },
-    scrape: {
-        url: "https://github.com/cmcalder55/pre-processing/tree/main/web-scraping"
-    },
-    toVector: {
-        url: "https://github.com/cmcalder55/pre-processing/tree/main/vector-representation"
-    },
-
     autoEn: {
-        url: "https://github.com/cmcalder55/placeholder"
+        url: "https://github.com/cmcalder55/feature-extraction/tree/main/autoencoder"
     },
-    hidden: {
-        url: "https://github.com/cmcalder55/placeholder"
-    },
+    probDen: {
+        url: "https://github.com/cmcalder55/feature-extraction/tree/main/eigen-proj"
+    },    
     semanticNet: {
-        url: "https://github.com/cmcalder55/placeholder"
+        url: "https://github.com/cmcalder55/feature-extraction/tree/main/semantic-network"
     },
-    vecEmbed: {
-        url: "https://github.com/cmcalder55/placeholder"
+    // optimization
+    bayesEst: {
+        url: "https://github.com/cmcalder55/optimization/tree/main/bayes_estimation"
+    },
+    compVis: {
+        url: "https://github.com/cmcalder55/optimization/tree/main/computer-vision-laplacian"
     },
     genAlg: {
         url: "https://github.com/cmcalder55/optimization/tree/main/genetic_algorithm"
-    },
+    },    
     linReg: {
         url: "https://github.com/cmcalder55/optimization/tree/main/linear_regression"
+    },
+    logReg: {
+        url: "https://github.com/cmcalder55/optimization/tree/main/logistic-regression"
     },
     logBar: {
         url: "https://github.com/cmcalder55/optimization/tree/main/log_barrier"
     },
     gradDesc: {
         url: "https://github.com/cmcalder55/optimization/tree/main/gradient_descent"
-    },
+    },    
     matFac: {
         url: "https://github.com/cmcalder55/optimization/tree/main/matrix_factorization"
     },
-    bayesEst: {
-        url: "https://github.com/cmcalder55/optimization/tree/main/bayes_estimation"
-    },
     stocProp: {
         url: "https://github.com/cmcalder55/optimization/tree/main/stochastic_backpropegation"
+    },    
+    // pattern recognition
+    musicRec: {
+        url: "https://github.com/cmcalder55/pattern-recognition/tree/main/music-recommender"
+    },    
+    dtClass: {
+        url: "https://github.com/cmcalder55/pattern-recognition/tree/main/decision-tree"
     },
+    predSales: {
+        url: "https://github.com/cmcalder55/pattern-recognition/tree/main/predict-global-sales"
+    },
+    textCluster: {
+        url: "https://github.com/cmcalder55/pattern-recognition/tree/main/text-clustering"
+    },    
+    textClf: {
+        url: "https://github.com/cmcalder55/pattern-recognition/tree/main/text-classifier"
+    },    
+    // pre-processing
+    textProc: {
+        url: "https://github.com/cmcalder55/pre-processing/tree/main/text-processing"
+    },   
+    toVector: {
+        url: "https://github.com/cmcalder55/pre-processing/tree/main/vector-representation"
+    },
+    // utils
+    netGraph: {
+        url: "https://github.com/cmcalder55/utils/blob/main/network-graph.ipynb"
+    },
+    webScr: {
+        url: "https://github.com/cmcalder55/utils/blob/main/web-scraping.ipynb"
+    }
 };
 
 export default links;

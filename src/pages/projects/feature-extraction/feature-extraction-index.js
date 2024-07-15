@@ -21,9 +21,9 @@ const FeatureExtraction = () => {
       },
       {
         title: "Conditional Class Density",
-        pagelink: "embedding",
+        pagelink: "prob-density",
         description: "todo",
-        url: links.vecEmbed.url
+        url: links.probDen.url
       },
     ],
   };
