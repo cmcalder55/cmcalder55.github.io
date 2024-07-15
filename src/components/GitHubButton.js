@@ -1,4 +1,4 @@
-   
+
 import React from 'react';     
 import "../styles/style.css"; 
 
@@ -10,7 +10,6 @@ const RepoLink = ({ link }) => {
 
     return (
         <a 
-            href={ link }
             target="_blank"
             rel="noopener noreferrer"
             className="github-link"            

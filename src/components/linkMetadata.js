@@ -6,7 +6,7 @@ const links = {
         url: "https://github.com/cmcalder55/ann/tree/main/cnn"
     },
     lstm: {
-        url: "https://github.com/cmcalder55/ann/tree/main/ltsm"
+        url: "https://github.com/cmcalder55/ann/tree/main/lstm"
     },
     resnet: {
         url: "https://github.com/cmcalder55/ann/tree/main/resnet"

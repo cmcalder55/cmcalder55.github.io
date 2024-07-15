@@ -5,10 +5,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import HomeLayout from "../components/HomeLayout";
 import Interests from "../pages/interests/Interests";
-import Art from "../pages/interests/Art";
 import Bookshelf from "../pages/interests/Bookshelf";
 import Technical from "../pages/interests/Technical";
-import Games from "../pages/interests/Games";
 
 import Home from "../pages/Home";
 import NoPage from "../pages/NoPage";
@@ -42,8 +40,8 @@ import AutoStorage from "../pages/projects/db-app-development/auto-storage";
 
 import FeatureExtraction from "../pages/projects/feature-extraction/feature-extraction-index";
 import Autoencoder from "../pages/projects/feature-extraction/autoencoder";
-import ProbDensity from "../pages/projects/feature-extraction/prob-density"
-import Semantic from "../pages/projects/feature-extraction/semantic-net"
+import ProbDensity from "../pages/projects/feature-extraction/prob-density";
+import Semantic from "../pages/projects/feature-extraction/semantic-net";
 
 import Optimization from "../pages/projects/optimization/optimization-index";
 import Backprop from "../pages/projects/optimization/stochastic-backpropegation";
@@ -55,11 +53,9 @@ import LinAlg from "../pages/projects/optimization/linear-regression";
 import LogBarrier from "../pages/projects/optimization/log-barrier";
 import LogReg from "../pages/projects/optimization/logistic-regression";
 import cvLaplacian from "../pages/projects/optimization/laplacian";
-import ProbDensity from "../pages/projects/feature-extraction/prob-density";
 
 import PreProcessing from "../pages/projects/pre-processing/pre-processing-index";
 import textProcessing from "../pages/projects/pre-processing/text-processing";
-import OneHotEncoder from "../pages/projects/pre-processing/one-hot";
 import Vectorization from "../pages/projects/pre-processing/vectorization";
 
 export default function AppRouter() {
@@ -137,7 +133,6 @@ export default function AppRouter() {
                         {/* Pre-Processing pages */}
                         <Route path="pre-processing" >
                             <Route index element={<PreProcessing />} />
-                                <Route path="one-hot-encoder" element={<OneHotEncoder />} />
                                 <Route path="vectorization" element={<Vectorization />} />
                                 <Route path="text-processing" element={<textProcessing />} />
                         </Route>
