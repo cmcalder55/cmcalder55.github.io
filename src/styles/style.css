@@ -122,7 +122,7 @@ main {
 }
 
 .square {
-  background-color: #ad5d0d; /* Example background color */
+  background-color: #b990b4; /* Example background color */
   cursor: pointer;
   width: 300px;
   height: 300px;
@@ -153,6 +153,7 @@ main {
 
 .nav-item:hover .dropdown-menu {
   display: block;
+  margin-top: 1%;
 }
 
 .dropdown-link {

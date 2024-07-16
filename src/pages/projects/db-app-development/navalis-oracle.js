@@ -14,9 +14,7 @@ const Oracle = () => {
         <p></p>
 
         <h2>Arborist</h2>
-        <p>
-          [ In Progress ]
-        </p>
+        <p></p>
 
   </div>
 }

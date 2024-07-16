@@ -1,5 +1,6 @@
-// import { useState } from "react";
+
 import { Outlet, NavLink } from "react-router-dom";
+
 import "../styles/style.css";
 
 const HomeLayout = () => {
@@ -56,6 +57,16 @@ const HomeLayout = () => {
                                 <li>
                                     <NavLink to="/projects/pre-processing" className="dropdown-link">
                                         Pre-Processing
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/projects/utils" className="dropdown-link">
+                                        Utilities / Helpers
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink exact to="https://github.com/cmcalder55/cmcalder55.github.io" className="dropdown-link">
+                                        Portfolio Website (GitHub)
                                     </NavLink>
                                 </li>
                                 {/* Add more projects here */}

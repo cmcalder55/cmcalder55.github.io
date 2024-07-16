@@ -14,13 +14,18 @@ const Projects = () => {
         { url: "/projects/feature-extraction", text: "Feature Extraction" },
         { url: "/projects/optimization", text: "Optimization" },
         { url: "/projects/pre-processing", text: "Pre-Processing" },
+        { url: "/projects/utils", text: "Utilities" },
+        { url: "https://github.com/cmcalder55/cmcalder55.github.io", text: "Portfolio Website (GitHub)" },
     ];
 
     // go to the page url on clicking the square
     const handleClick = (url) => {
-        navigate(url);
+        if (url.startsWith("https")) {
+            window.open(url, '_blank');
+        } else {
+            navigate(url);
+        }
     };
-
     return (
         <div className="projects-container">
             <h1>Projects</h1>

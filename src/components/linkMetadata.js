@@ -101,6 +101,9 @@ const links = {
     },
     webScr: {
         url: "https://github.com/cmcalder55/utils/blob/main/web-scraping.ipynb"
+    },
+    webUI: {
+        url: "https://github.com/cmcalder55/cmcalder55.github.io"
     }
 };
 

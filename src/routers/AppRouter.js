@@ -58,6 +58,10 @@ import PreProcessing from "../pages/projects/pre-processing/pre-processing-index
 import textProcessing from "../pages/projects/pre-processing/text-processing";
 import Vectorization from "../pages/projects/pre-processing/vectorization";
 
+import Utils from "../pages/projects/utils/utils-index";
+import netGraph from "../pages/projects/utils/network-graph";
+import webScraping from "../pages/projects/utils/web-scraping";
+
 export default function AppRouter() {
     return (
         <Router>
@@ -137,6 +141,13 @@ export default function AppRouter() {
                                     <Route path="text-processing" element={<textProcessing />} />
                             </Route>
 
+                            {/* Utils pages */}
+                            <Route path="utils" >
+                                <Route index element={<Utils />} />
+                                    <Route path="web-scraping" element={<webScraping />} />
+                                    <Route path="network-graph" element={<netGraph />} />
+                            </Route>
+                        </Route>
                     </Route>
 
                     {/* interests pages */}
@@ -148,7 +159,8 @@ export default function AppRouter() {
 
                     {/* Catch any undefined URLs (404 error) */}
                     <Route path="*" element={<NoPage />} />
-                </Route>
+
+                {/* </Route> */}
             </Routes>
         </Router>
     );
