@@ -1,14 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.f60257a4.css",
-    "main.js": "/static/js/main.f42d101e.js",
-    "static/media/water.jpg": "/static/media/water.d20d0f8bc5669fe492f1.jpg",
+    "main.css": "/static/css/main.40ada114.css",
+    "main.js": "/static/js/main.bfa68f19.js",
+    "static/media/fira-code-latin-400-normal.woff": "/static/media/fira-code-latin-400-normal.f6c6f117610544fb0dc1.woff",
+    "static/media/fira-code-latin-400-normal.woff2": "/static/media/fira-code-latin-400-normal.602eb93fcc55fbc80a4f.woff2",
+    "static/media/fira-code-cyrillic-ext-400-normal.woff": "/static/media/fira-code-cyrillic-ext-400-normal.540023a9b46a9d831de2.woff",
+    "static/media/fira-code-cyrillic-ext-400-normal.woff2": "/static/media/fira-code-cyrillic-ext-400-normal.508458e8abdccadea533.woff2",
+    "static/media/fira-code-latin-ext-400-normal.woff": "/static/media/fira-code-latin-ext-400-normal.cdee089641063008e2be.woff",
+    "static/media/fira-code-greek-400-normal.woff": "/static/media/fira-code-greek-400-normal.ec960df5068862243cbc.woff",
+    "static/media/fira-code-cyrillic-400-normal.woff": "/static/media/fira-code-cyrillic-400-normal.9aada3df8b392ef1bbc7.woff",
+    "static/media/fira-code-greek-400-normal.woff2": "/static/media/fira-code-greek-400-normal.1c15ffeb30a43928dcfd.woff2",
+    "static/media/fira-code-latin-ext-400-normal.woff2": "/static/media/fira-code-latin-ext-400-normal.b97c297bd52859a0d424.woff2",
+    "static/media/fira-code-greek-ext-400-normal.woff": "/static/media/fira-code-greek-ext-400-normal.e0547b72c3661e9eceff.woff",
+    "static/media/fira-code-cyrillic-400-normal.woff2": "/static/media/fira-code-cyrillic-400-normal.e1e9e3ed08af5b50de41.woff2",
+    "static/media/fira-code-greek-ext-400-normal.woff2": "/static/media/fira-code-greek-ext-400-normal.4d56ea953041d06820e2.woff2",
     "index.html": "/index.html",
-    "main.f60257a4.css.map": "/static/css/main.f60257a4.css.map",
-    "main.f42d101e.js.map": "/static/js/main.f42d101e.js.map"
+    "main.40ada114.css.map": "/static/css/main.40ada114.css.map",
+    "main.bfa68f19.js.map": "/static/js/main.bfa68f19.js.map"
   },
   "entrypoints": [
-    "static/css/main.f60257a4.css",
-    "static/js/main.f42d101e.js"
+    "static/css/main.40ada114.css",
+    "static/js/main.bfa68f19.js"
   ]
 }
