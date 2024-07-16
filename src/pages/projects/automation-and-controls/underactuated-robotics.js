@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import links from "../../../components/linkMetadata";
-import RepoLink from "../../../components/GitHubButton";
+import {RepoLink} from "../../../components/Buttons";
 
 export const UaRobotics = () => {
     return (

@@ -1,6 +1,6 @@
 
 import links from "../../../components/linkMetadata";
-import RepoLink from "../../../components/GitHubButton";
+import {RepoLink} from "../../../components/Buttons";
 
 const Semantic = () => {
     <div>

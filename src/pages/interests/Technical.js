@@ -6,7 +6,7 @@ const Technical = () => {
 	return (
 		<div>
 			<h1>
-                Interesting Techinical Papers
+                Interesting Techinical Topics
 			</h1>
 		</div>
 	);

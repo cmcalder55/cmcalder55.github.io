@@ -6,7 +6,7 @@ const Bookshelf = () => {
 	return (
 		<div>
 			<h1>
-                What I'm Reading
+                Good Reads
 			</h1>
 		</div>
 	);

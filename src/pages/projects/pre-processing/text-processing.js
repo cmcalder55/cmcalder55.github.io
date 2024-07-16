@@ -1,12 +1,12 @@
 
 import links from "../../../components/linkMetadata";
-import RepoLink from "../../../components/GitHubButton";
+import {RepoLink} from "../../../components/Buttons";
 
 const textProcessing = () => {
     return (
         <div>
           <h1>Text Pre-Processing</h1>
-          <RepoLink link={links.scrape.url} />
+          <RepoLink link={links.textProcessing.url} />
           <p>Placeholder</p>
         </div>
       );

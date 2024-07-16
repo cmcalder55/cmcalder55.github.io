@@ -14,21 +14,6 @@ main {
   color: #f0f0f0d6; /* Adjust text color as needed */
 }
 
-/* GitHub link */
-.github-link {
-  display: inline-block;
-  background-color: #333; /* GitHub dark gray */
-  color: white;
-  padding: 8px 12px;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
-}
-
-.github-link:hover {
-  background-color: #111; /* Darker gray */
-}
-
 /* Navbar */
 .navbar {
   background-color: #5f4545bc;
@@ -45,8 +30,11 @@ main {
 }
 
 .nav-item {
-  margin: 0 20px; /* Increased spacing for better tap targets */
+  margin: 20px; /* Increased spacing for better tap targets */
   color: #a59b91; /* Improved contrast */
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
 }
 
 .nav-subgroup {
@@ -107,7 +95,13 @@ main {
 }
 
 .projects-container {
-  padding: 20px;
+  margin: 20px;
+}
+
+.projects-container h1 {
+  padding: 0 40px;
+  margin: 10px 1% 1em;
+  width: 66%;
 }
 
 /* Pages layout */
@@ -124,66 +118,22 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Creates three columns */
   gap: 60px 40px; /* Adjust the gap between items as needed */
+  margin-inline-start: 10%;
 }
 
 .square {
   background-color: #ad5d0d; /* Example background color */
   cursor: pointer;
-  width: 170px;
-  height: 170px; /* Adjust height as needed */
+  width: 300px;
+  height: 300px;
+  margin-bottom: 10px;
 }
 
 .square-text {
   text-align: left;
   color: white; /* Text color */
   margin-top: 10px; /* Adjust the space between the square and the text */
-  font-size: 14px;
-}
-
-/* topics layout */
-.topic-container {
-  background-color: #5a5555;
-  left: 10px;
-  display: block; /* Enables flexbox layout */
-  align-items: center; /* Aligns children vertically in the center */
-  justify-content: space-between; /* Distributes space between children */
-  padding: 40px;
-  margin-bottom: 40px;
-  max-width: 80%;
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out;
-  position: relative; /* Needed for positioning the pseudo-element or image */
-}
-
-.topic-container:hover {
-  background-color: #ac8585;
-  font-weight: bold;
-  transform: scale(1.02);
-}
-
-.topic-container::after {
-  content: "";
-  background-image: url("water.jpg"); /* Replace with your image path */
-  background-size: cover; /* Covers the area of the pseudo-element */
-  background-position: center; /* Centers the background image */
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 33.33%; /* Takes up the right third of the container */
-}
-
-.topic-title {
-  margin: 0;
-  color: #ffffff;
-  text-decoration: none;
-  /* font-weight: normal; */
-}
-
-.topic-text-content {
-  flex-grow: 1; /* Allows the text content to fill the available space */
-  padding-right: 20px; /* Adds spacing between the text and the image */
-  font-weight: normal;
+  font-size: 16px;
 }
 
 /* dropdown menu */
@@ -218,13 +168,14 @@ main {
 
 .img-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center; /* This line is for vertical centering if needed */
   img {
     margin: 0 auto; /* Centers the image horizontally */
     height: auto; /* Maintain aspect ratio */
     max-width: 90%; /* Responsive */
   }
+  flex-shrink: 0; /* Prevents the image from shrinking */
 }
 
 figure {
@@ -245,23 +196,4 @@ figcaption {
   font-style: italic; /* Italicizes the caption */
   text-align: center; /* Optional: Centers the image and caption */
   padding: auto;
-}
-
-.learn-more-button {
-  background-color: #3b94dd; /* Green background */
-  color: white; /* White text */
-  font-size: 16px; /* Set the font size */
-  padding: 10px 20px; /* Top/bottom and left/right padding */
-  border: none; /* No border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  text-decoration: none; /* No underline */
-  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effects */
-  margin-left: 10px; /* Adds margin to the right of the button */
-}
-
-.learn-more-button:hover, .learn-more-button:focus {
-  background-color: #2c86cf; /* Slightly darker green background on hover/focus */
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Add shadow for 3D effect on hover */
-  outline: none; /* Remove outline on focus for aesthetics */
 }

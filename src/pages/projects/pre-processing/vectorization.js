@@ -1,11 +1,11 @@
 
 import links from "../../../components/linkMetadata";
-import RepoLink from "../../../components/GitHubButton";
+import { RepoLink } from "../../../components/Buttons";
 
 const vectorEmbedding = () => {
     <div>
         <h1>Vector Embedding</h1>
-        <RepoLink link={links.vecEmbed.url} />
+        <RepoLink link={links.toVector.url} />
 
         <p></p>
 

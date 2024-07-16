@@ -1,13 +1,11 @@
 body {
   margin: 0;
-  font-family: "Crimson Text", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
+  font-family: "Fira Code";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: "Fira Code", source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
