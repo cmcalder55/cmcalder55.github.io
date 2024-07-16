@@ -89,11 +89,6 @@ main {
 }
 
 /* Project layout */
-.projects-layout {
-  display: flex;
-  padding: 20px;
-}
-
 .projects-container {
   margin: 20px;
 }
@@ -107,6 +102,10 @@ main {
 /* Pages layout */
 .pages-layout {
   display: flex;
+}
+
+p.with-breaks {
+  white-space: pre-wrap;
 }
 
 .pages-container {

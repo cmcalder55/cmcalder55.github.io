@@ -6,9 +6,7 @@ import "../../styles/style.css";
 const Bookshelf = () => {
 	return (
 		<div className="main">
-			<h1>
-                Good Reads
-			</h1>
+			<h1>Good Reads</h1>
 		</div>
 	);
 };

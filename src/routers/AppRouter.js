@@ -15,6 +15,8 @@ import About from "../pages/About";
 import ProjectsLayout from "../components/ProjectsLayout";
 import Projects from "../pages/Projects";
 
+import PagesLayout from "../components/PagesLayout";
+
 import ANN from "../pages/projects/artificial-neural-net/ann-index";
 import resNet from "../pages/projects/artificial-neural-net/res-net";
 import LSTM from "../pages/projects/artificial-neural-net/lstm";
@@ -151,7 +153,7 @@ export default function AppRouter() {
                     </Route>
 
                     {/* interests pages */}
-                    <Route path="interests" >
+                    <Route path="interests" element={<PagesLayout/>} >
                         <Route index element={<Interests />} />
                             <Route path="bookshelf" element={<Bookshelf />} />
                             <Route path="technical" element={<Technical />} />

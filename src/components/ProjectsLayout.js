@@ -6,7 +6,7 @@ import "../styles/style.css";
 
 const ProjectsLayout = () => {
   return (
-    <div className="projects-layout">
+    <div className="pages-layout">
       <main className="content">
         <Outlet /> {/* For Nested Routes if necessary */}
       </main>
