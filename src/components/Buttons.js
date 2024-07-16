@@ -2,12 +2,13 @@
 import React from 'react';     
 import "../styles/style.css"; 
 
-
-const handleClick = (url) => {
-    window.open(url);
-};
+import { useNavigate } from 'react-router-dom';
 
 const RepoLink = ({ link }) => {
+    
+    const handleClick = (url) => {
+        window.open(url);
+    };
 
     return (
         <a 
@@ -23,10 +24,12 @@ const RepoLink = ({ link }) => {
 
 const LearnMore = ({ link }) => {
 
+    const navigate = useNavigate();
+
     return (
         <button className="learn-more-button"
             href={link}
-            onClick={ () => { handleClick(link); }}
+            onClick={ () => { navigate(link); }}
         >
             Learn More
         </button> 
