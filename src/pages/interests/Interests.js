@@ -23,7 +23,7 @@ const Interests = () => {
   };
   return (
       <div className="projects-container">
-          <h1>Interests</h1>
+          <h1>Interesting Technical Topics</h1>
           {/* <p>Here are some of the projects I have worked on.</p> */}
           <div className="grid-container">
               {/* Render the squares with their corresponding URLs and text */}
