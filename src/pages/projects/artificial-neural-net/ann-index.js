@@ -10,7 +10,7 @@ const ANN = () => {
             {
                 title: "Convolutional Neural Networks",
                 pagelink: "cnn",
-                description: "- Hidden Layers sequential model with Dense layers\n    - Test the effects of different numbers of hidden layers on the IMDB dataset\n\n\
+                description: "- Hidden/Dense Layers sequential model\n    - Test the effects of different numbers of hidden layers on the IMDB dataset\n\n\
 - Test different CNN model setups\n    - ReLU vs. Leaky ReLU activation\n    - Increasing/decreasing dropout\n    - Additional convolution/activation/pooling hidden layer blocks",
                 url: links.cnn.url
             },
