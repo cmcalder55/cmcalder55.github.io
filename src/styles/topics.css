@@ -1,13 +1,5 @@
 /* topics.css */
 
-main {
-    flex-grow: 1;
-    padding: 10px;
-    background-color: #2d2e2e;
-    font: 200px;
-    color: #f0f0f0d6; 
-}
-
 /* GitHub button layout */
 .github-link {
     background-color: #222;               

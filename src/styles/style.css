@@ -1,4 +1,4 @@
-/* Layout.css */
+/* style.css */
 
 .outlet {
   flex-grow: 1;
@@ -8,15 +8,33 @@
 
 main {
   flex-grow: 1;
-  padding: 10px; /* Adjust padding as needed */
-  background-color: #2d2e2e; /* A named color */
+  padding: 10px;
   font: 200px;
-  color: #f0f0f0d6; /* Adjust text color as needed */
+  color: #000;
+  background-color: #fff;  
+}
+
+main h1 {
+  color: #000;
+}
+
+/* Remove default link styling */
+a {
+  text-decoration: none;  /* Removes underline */
+  color: inherit;         /* Inherits text color from parent */
+  font-weight: normal;    /* Ensures normal font weight */
+}
+
+/* Prevent bold on hover */
+a:hover {
+  font-weight: bold;    /* Prevents bold on hover */
+  text-decoration: none;  /* Ensures no underline appears */
 }
 
 /* Navbar */
+
 .navbar {
-  background-color: #5f4545bc;
+  background-color: #fff;
   padding: 0 20px;
 }
 
@@ -29,59 +47,52 @@ main {
   height: 70px;
 }
 
-.nav-item {
-  margin: 20px; /* Increased spacing for better tap targets */
-  color: #a59b91; /* Improved contrast */
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row-reverse;
-}
-
 .nav-subgroup {
   margin-left: 20px;
   list-style-type: none;
 }
 
-.nav-link {
-  text-decoration: none;
-  color: #cfcbcb; /* Darker shade for better readability */
-  font-size: 1.1em;
-  font-weight: normal;
-  border-radius: 5px; /* Rounds the corners of the background */
-  padding: 3px 5px 4px;
-  margin: -3px -5px -4px; /* Negates the added padding to keep layout consistent */
-  display: inline-block;
-  transition: background-color 0.3s ease;
-}
-
-.nav-link.active {
-  color: #ffffff;
-  outline: none; /* Removes the default focus outline */
-  background-color: #e6d1c749; /* Sets a background color for the focus state */
-  border-color: #e6d1c749;
-  border-radius: 5px; /* Rounds the corners of the background */
-  display: inline-block; /* Allows the padding and border-radius to be applied */
-  padding: 3px 5px 4px;
-  margin: -3px -5px -4px; /* Negates the added padding to keep layout consistent */
-  font-weight: bold;
-}
-
-.nav-link:hover {
-  color: #ffffff;
-  outline: none; /* Removes the default focus outline */
-  background-color: #e6d1c749; /* Sets a background color for the focus state */
-  border-radius: 5px; /* Rounds the corners of the background */
-  border-color: #ffffffc1;
-  display: inline-block; /* Allows the padding and border-radius to be applied */
-  padding: 3px 5px 4px;
-  margin: -3px -5px -4px; /* Negates the added padding to keep layout consistent */
+.nav-item {
+  margin: 20px; /* Increased spacing for better tap targets */
+  color: #000; /* Improved contrast */
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
 }
 
 .nav-item > .nav-link {
   cursor: pointer;
 }
 
+.nav-link {
+  text-decoration: none;
+  color: #181717; /* Darker shade for better readability */
+  font-size: 1.1em;
+  font-weight: normal;
+  padding: 3px 5px 4px;
+  margin: -3px -5px -4px; /* Keeps layout consistent */
+  display: inline-block;
+  transition: font-weight 0.2s ease, font-style 0.2s ease; /* Smooth transition */
+}
+
+.nav-link.active {
+  color: #000000;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #181717; /* Keep the same color */
+  font-weight: bold; /* Bold text */
+  font-style: italic; /* Italicized text */
+  text-decoration: none; /* No underline */
+  outline: none; /* Removes focus outline */
+  border: none; /* No border */
+  background: none; /* No background change */
+}
+
+
 /* Home layout */
+
 .home-layout {
   display: flex;
   flex-direction: column;
@@ -89,10 +100,10 @@ main {
 }
 
 /* Project layout */
+
 .projects-container {
   margin: 20px;
 }
-
 .projects-container h1 {
   padding: 0 40px;
   margin: 10px 1% 1em;
@@ -100,6 +111,7 @@ main {
 }
 
 /* Pages layout */
+
 .pages-layout {
   display: flex;
 }
@@ -112,34 +124,12 @@ p.with-breaks {
   padding: 20px;
 }
 
-/* Grid layout */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Creates three columns */
-  gap: 60px 40px; /* Adjust the gap between items as needed */
-  margin-inline-start: 10%;
-}
-
-.square {
-  background-color: #b990b4; /* Example background color */
-  cursor: pointer;
-  width: 300px;
-  height: 300px;
-  margin-bottom: 10px;
-}
-
-.square-text {
-  text-align: left;
-  color: white; /* Text color */
-  margin-top: 10px; /* Adjust the space between the square and the text */
-  font-size: 16px;
-}
-
 /* dropdown menu */
+
 .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   font-size: 14px;
@@ -150,21 +140,22 @@ p.with-breaks {
   z-index: 1000; /* Ensures the dropdown is above other content */
 }
 
+.dropdown-link {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: #000;
+}
+.dropdown-link:hover {
+  background-color: #d1cccc;
+}
+
 .nav-item:hover .dropdown-menu {
   display: block;
   margin-top: 1%;
 }
 
-.dropdown-link {
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  color: #333;
-}
-
-.dropdown-link:hover {
-  background-color: #ddd;
-}
+/* figures/images */
 
 .img-container {
   display: flex;
