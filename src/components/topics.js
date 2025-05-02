@@ -1,4 +1,6 @@
-const project_data = {
+import links from "./links";
+
+const data = {
     name: "Projects",
     topics: [
         {
@@ -192,4 +194,4 @@ const project_data = {
     ],
 };
 
-export default project_data;
+export default data;

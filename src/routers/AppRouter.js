@@ -10,34 +10,36 @@ import HomeLayout from "../components/HomeLayout";
 import Home from "../pages/Home";
 
 import ProjectsLayout from "../components/ProjectsLayout";
-import Projects from "../pages/Projects";
+import ProjectPage from "../pages/Projects";
 
-import LSTM from "../pages/projects/artificial-neural-net/lstm";
-import CNN from "../pages/projects/artificial-neural-net/cnn";
-import { UaRobotics } from "../pages/projects/automation-and-controls/underactuated-robotics";
-import { PiController } from "../pages/projects/automation-and-controls/pi-controller";
-import { PathFindingSim } from "../pages/projects/automation-and-controls/robot-path-finding";
-import FwdInvKinematics from "../pages/projects/automation-and-controls/fi-kinematics";
-import MusicRec from "../pages/projects/pattern-recognition/music-recommender";
-import TextClustering from "../pages/projects/pattern-recognition/text-clustering";
-import TextClassifier from "../pages/projects/pattern-recognition/text-classifiers";
-import PredictGameSales from "../pages/projects/pattern-recognition/predict-game-sales";
-import DecisionTree from "../pages/projects/pattern-recognition/decision-tree";
-import FlowerGen from "../pages/projects/db-app-development/flower-generator";
-import Oracle from "../pages/projects/db-app-development/navalis-oracle";
-import AutoStorage from "../pages/projects/db-app-development/auto-storage";
-import Autoencoder from "../pages/projects/feature-extraction/autoencoder";
-import ProbDensity from "../pages/projects/feature-extraction/prob-density";
-import Semantic from "../pages/projects/feature-extraction/semantic-net";
-import Backprop from "../pages/projects/optimization/stochastic-backpropegation";
-import BayesEst from "../pages/projects/optimization/bayes-estimation";
-import Factorization from "../pages/projects/optimization/matrix-factorization";
-import GenAlg from "../pages/projects/optimization/genetic-algorithm";
-import GradientDescent from "../pages/projects/optimization/gradient-descent";
-import LinAlg from "../pages/projects/optimization/linear-regression";
-import LogBarrier from "../pages/projects/optimization/log-barrier";
-import LogReg from "../pages/projects/optimization/logistic-regression";
-import Vectorization from "../pages/projects/pre-processing/vectorization";
+import data from "../components/topics"
+
+import LSTM from "../pages/projects/lstm";
+import CNN from "../pages/projects/cnn";
+import { UaRobotics } from "../pages/projects/underactuated-robotics";
+import { PiController } from "../pages/projects/pi-controller";
+import { PathFindingSim } from "../pages/projects/robot-path-finding";
+import FwdInvKinematics from "../pages/projects/fi-kinematics";
+import MusicRec from "../pages/projects/music-recommender";
+import TextClustering from "../pages/projects/text-clustering";
+import TextClassifier from "../pages/projects/text-classifiers";
+import PredictGameSales from "../pages/projects/predict-game-sales";
+import DecisionTree from "../pages/projects/decision-tree";
+import FlowerGen from "../pages/projects/flower-generator";
+import Oracle from "../pages/projects/navalis-oracle";
+import AutoStorage from "../pages/projects/auto-storage";
+import Autoencoder from "../pages/projects/autoencoder";
+import ProbDensity from "../pages/projects/prob-density";
+import Semantic from "../pages/projects/semantic-net";
+import Backprop from "../pages/projects/stochastic-backpropegation";
+import BayesEst from "../pages/projects/bayes-estimation";
+import Factorization from "../pages/projects/matrix-factorization";
+import GenAlg from "../pages/projects/genetic-algorithm";
+import GradientDescent from "../pages/projects/gradient-descent";
+import LinAlg from "../pages/projects/linear-regression";
+import LogBarrier from "../pages/projects/log-barrier";
+import LogReg from "../pages/projects/logistic-regression";
+import Vectorization from "../pages/projects/vectorization";
 
 
 export default function AppRouter() {
@@ -53,8 +55,8 @@ export default function AppRouter() {
 
                     {/* Projects page with subroutes */}
                     <Route path="projects" element={<ProjectsLayout />}>
-                        <Route index element={<Projects />} />
-                            <Route path="cnn" element={<CNN />} />
+                        <Route index element={<ProjectPage data={data}/>} />
+                            {/* <Route path="cnn" element={<CNN />} />
                             <Route path="lstm" element={<LSTM />} />
                             <Route path="resnet" element={<resNet />} />
                             <Route path="ua-robotics" element={<UaRobotics />} />
@@ -84,7 +86,7 @@ export default function AppRouter() {
                             <Route path="vectorization" element={<Vectorization />} />
                             <Route path="text-processing" element={<textProcessing />} />
                             <Route path="web-scraping" element={<webScraping />} />
-                            <Route path="network-graph" element={<netGraph />} />
+                            <Route path="network-graph" element={<netGraph />} /> */}
                         </Route>
                     </Route>
 
