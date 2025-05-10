@@ -2,27 +2,30 @@ import React from "react";
 import { RepoLink, LearnMore } from "../components/Buttons";
 import "../styles/topics.css";
 import "../styles/style.css";
+import RepoList from "./Repos";
 
-
-const ProjectPage = ({ data }) => {
-
+const ProjectPage = ({ data, loading, error, username }) => {
+    if (loading) return <p>Loading {username}’s public repos…</p>;
+    if (error)   return <p style={{ color: "red" }}>Error: {error}</p>;
+    if (!data.length)
+      return <p>{username} has no public repositories.</p>;
+  
     return (
-        <div className="main">
-            <h1>{data.name}</h1>
-            {data.topics.map((topic, index) => (
-                <div key={index} className="topic-container">
-                    <div className="topic-info">
-                        <h2>{topic.title} </h2>   
-                        <RepoLink link={topic.url} />
-                        <LearnMore link={topic.pagelink} />                                                
-                    </div>
-                    <div className="topic-description">
-                        <p>{topic.description}</p>
-                    </div>
-                </div>
-            ))}
-        </div>
+      <div className="main">
+        {data.map((repo) => (
+          <div key={repo.id} className="topic-container">
+            <div className="topic-info">
+              <h2>{repo.name}</h2>
+              <RepoLink link={repo.html_url} />
+              <LearnMore link={repo.html_url} />
+            </div>
+            <div className="topic-description">
+              <p>{repo.description || "No description provided."}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     );
-};
-
-export default ProjectPage;
+  };
+  
+  export default ProjectPage;
